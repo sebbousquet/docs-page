@@ -1,0 +1,4741 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Exploration - Explore your Geo BigData with ARLAS Exploration</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../css/styles.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#arlas-exploration-api" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Explore your Geo BigData with ARLAS Exploration" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Explore your Geo BigData with ARLAS Exploration
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Exploration
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Explore your Geo BigData with ARLAS Exploration" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Explore your Geo BigData with ARLAS Exploration
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../introduction-arlas/" title="What is it for?" class="md-nav__link">
+      What is it for?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-quick-start/" title="Quick Start" class="md-nav__link">
+      Quick Start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-birdtracking-tutorial/" title="Birds tracking" class="md-nav__link">
+      Birds tracking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-ais-tutorial/" title="Boats positions" class="md-nav__link">
+      Boats positions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-openaq-tutorial/" title="Air pollution" class="md-nav__link">
+      Air pollution
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      How to guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        How to guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-add-collection/" title="Add and Reference data" class="md-nav__link">
+      Add and Reference data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-wui-configuration/" title="ARLAS-wui" class="md-nav__link">
+      ARLAS-wui
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-server-configuration/" title="ARLAS-server" class="md-nav__link">
+      ARLAS-server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-persistence-configuration/" title="ARLAS-persistence" class="md-nav__link">
+      ARLAS-persistence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-tagger-configuration/" title="ARLAS-tagger" class="md-nav__link">
+      ARLAS-tagger
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Securing ARLAS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Securing ARLAS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-security/" title="Backend" class="md-nav__link">
+      Backend
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-wui-security/" title="Frontend" class="md-nav__link">
+      Frontend
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      ARLAS Exploration for Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        ARLAS Exploration for Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction-developers/" title="How does it work ?" class="md-nav__link">
+      How does it work ?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" checked>
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Backend documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        Backend documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-1" type="checkbox" id="nav-5-2-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-2-1">
+      ARLAS-server APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-1">
+        ARLAS-server APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Exploration
+      </label>
+    
+    <a href="./" title="Exploration" class="md-nav__link md-nav__link--active">
+      Exploration
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url-schema" class="md-nav__link">
+    URL Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#url-parts" class="md-nav__link">
+    URL Parts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-aggregation" class="md-nav__link">
+    Part: aggregation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-filter" class="md-nav__link">
+    Part: filter
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-filter-parameters" class="md-nav__link">
+    Available filter parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-parameters-algebra" class="md-nav__link">
+    Filter parameters algebra
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-parameter-syntax" class="md-nav__link">
+    f parameter syntax
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#special-syntax-for-date-queries-using-lt-gt-lte-gte-and-range-operations" class="md-nav__link">
+    Special syntax for date queries using lt, gt, lte, gte and range operations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partition-filtering" class="md-nav__link">
+    Partition filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-filtering" class="md-nav__link">
+    Column filtering
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-form" class="md-nav__link">
+    Part: form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-field" class="md-nav__link">
+    Part: field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-projection" class="md-nav__link">
+    Part: projection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-returned_geometries" class="md-nav__link">
+    Part: returned_geometries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-suggest" class="md-nav__link">
+    Part: suggest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-page" class="md-nav__link">
+    Part: page
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sort-parameter" class="md-nav__link">
+    sort parameter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-and-before-parameter" class="md-nav__link">
+    after and before parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opensearch" class="md-nav__link">
+    OpenSearch
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api-collection/" title="Collection Managment" class="md-nav__link">
+      Collection Managment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-collection-model/" title="Collection Model" class="md-nav__link">
+      Collection Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-tile-service/" title="Tile Service" class="md-nav__link">
+      Tile Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-ogc/" title="OGC" class="md-nav__link">
+      OGC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-inspire/" title="INSPIRE" class="md-nav__link">
+      INSPIRE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/" title="Reference" class="md-nav__link">
+      Reference
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-2" type="checkbox" id="nav-5-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-2">
+      ARLAS-persistence APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-2">
+        ARLAS-persistence APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-persistence-server-overview.md" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api-persistence/" title="Persist" class="md-nav__link">
+      Persist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3" type="checkbox" id="nav-5-2-3">
+    
+    <label class="md-nav__link" for="nav-5-2-3">
+      ARLAS-tagger APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-3">
+        ARLAS-tagger APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-tagger-overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api-tagging/" title="Tagging" class="md-nav__link">
+      Tagging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tagger_reference/" title="Reference" class="md-nav__link">
+      Reference
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Frontend documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        Frontend documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-your-wui/" title="How to build your ARLAS-wui" class="md-nav__link">
+      How to build your ARLAS-wui
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../schemas-doc/schemas/" title="Configuration schemas" class="md-nav__link">
+      Configuration schemas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3" type="checkbox" id="nav-5-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3">
+      Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-3">
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1" type="checkbox" id="nav-5-3-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-1">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-1" type="checkbox" id="nav-5-3-3-1-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_services_collaborativesearch_service_.collaborativesearchservice/" title="Collaborative Search Service" class="md-nav__link">
+      Collaborative Search Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_services_config_service_.configservice/" title="Configuration Service" class="md-nav__link">
+      Configuration Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_models_contributor_.contributor/" title="Contributor" class="md-nav__link">
+      Contributor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-2" type="checkbox" id="nav-5-3-3-1-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_chipssearchcontributor_.chipssearchcontributor/" title="ChipsSearch" class="md-nav__link">
+      ChipsSearch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_computecontributor_.computecontributor/" title="Compute (Metric)" class="md-nav__link">
+      Compute (Metric)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_detailedhistogramcontributor_.detailedhistogramcontributor/" title="DetailedHistogram" class="md-nav__link">
+      DetailedHistogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_histogramcontributor_.histogramcontributor/" title="Histogram" class="md-nav__link">
+      Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_mapcontributor_.mapcontributor/" title="Map" class="md-nav__link">
+      Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_resultlistcontributor_.resultlistcontributor/" title="ResultList" class="md-nav__link">
+      ResultList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_swimlanecontributor_.swimlanecontributor/" title="Swimlane" class="md-nav__link">
+      Swimlane
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_treecontributor_.treecontributor/" title="Tree" class="md-nav__link">
+      Tree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-3" type="checkbox" id="nav-5-3-3-1-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_donut_donut_component_.donutcomponent/" title="Donut" class="md-nav__link">
+      Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_histogram_histogram_component_.histogramcomponent/" title="Histogram" class="md-nav__link">
+      Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_mapgl_component_.mapglcomponent/" title="Map" class="md-nav__link">
+      Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_import_mapgl_import_component_.mapglimportcomponent/" title="Map data importer" class="md-nav__link">
+      Map data importer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_settings_mapgl_settings_component_.mapglsettingscomponent/" title="Map layers settings" class="md-nav__link">
+      Map layers settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_metric_metric_component_.metriccomponent/" title="Metric" class="md-nav__link">
+      Metric
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_powerbars_powerbars_component_.powerbarscomponent/" title="Powerbars" class="md-nav__link">
+      Powerbars
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_results_result_list_result_list_component_.resultlistcomponent/" title="ResultList" class="md-nav__link">
+      ResultList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_wmts_layer_manager_wmts_layer_manager_component_.wmtslayermanagercomponent/" title="WMTS Manager" class="md-nav__link">
+      WMTS Manager
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4" type="checkbox" id="nav-5-3-3-1-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4">
+      D3 Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-4">
+        D3 Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-1" type="checkbox" id="nav-5-3-3-1-4-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-1">
+      Donuts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-1">
+        Donuts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_abstractdonut_.abstractdonut/" title="Abstract Donut" class="md-nav__link">
+      Abstract Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_multiselectiondonut_.multiselectiondonut/" title="Multi selection Donut" class="md-nav__link">
+      Multi selection Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_oneselectiondonut_.oneselectiondonut/" title="Single selection Donut" class="md-nav__link">
+      Single selection Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_donutparams_.donutparams/" title="DonutParams" class="md-nav__link">
+      DonutParams
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2" type="checkbox" id="nav-5-3-3-1-4-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2">
+      Histograms
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2">
+        Histograms
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_abstracthistogram_.abstracthistogram/" title="Abstract Histogram" class="md-nav__link">
+      Abstract Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_histogramparams_.histogramparams/" title="HistogramParams" class="md-nav__link">
+      HistogramParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2-3" type="checkbox" id="nav-5-3-3-1-4-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2-3">
+      Charts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2-3">
+        Charts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_abstractchart_.abstractchart/" title="AbstractChart" class="md-nav__link">
+      AbstractChart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_chartarea_.chartarea/" title="Area Chart" class="md-nav__link">
+      Area Chart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_chartbars_.chartbars/" title="Bar Chart" class="md-nav__link">
+      Bar Chart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_chartonedimension_.chartonedimension/" title="One dimension Chart" class="md-nav__link">
+      One dimension Chart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2-4" type="checkbox" id="nav-5-3-3-1-4-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2-4">
+      Swimlanes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2-4">
+        Swimlanes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_swimlanes_abstractswimlane_.abstractswimlane/" title="AbstractSwimlane" class="md-nav__link">
+      AbstractSwimlane
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_swimlanes_swimlanebars_.swimlanebars/" title="Bar Swimlanes" class="md-nav__link">
+      Bar Swimlanes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_swimlanes_swimlanecircles_.swimlanecircles/" title="Circle Swimlanes" class="md-nav__link">
+      Circle Swimlanes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-5" type="checkbox" id="nav-5-3-3-1-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-5">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-5">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_analytics_board_analytics_board_component_.analyticsboardcomponent/" title="Analytic Board" class="md-nav__link">
+      Analytic Board
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_bookmark_bookmarkdatabase_.bookmarkdatabase.md" title="Bookmark Database" class="md-nav__link">
+      Bookmark Database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_date_picker_date_picker_component_.datepickercomponent/" title="Date Picker" class="md-nav__link">
+      Date Picker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_errormodal_errormodal_component_.errormodalcomponent/" title="Error" class="md-nav__link">
+      Error
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_share_share_component_.sharecomponent/" title="Share" class="md-nav__link">
+      Share
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_tag_tag_component_.tagcomponent/" title="Tag" class="md-nav__link">
+      Tag
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_timeline_timeline_component_.timelinecomponent/" title="Timeline" class="md-nav__link">
+      Timeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_timeline_shortcut_timeline_shortcut_component_.timelineshortcutcomponent/" title="Timeline Shortcut" class="md-nav__link">
+      Timeline Shortcut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_widget_widget_component_.widgetcomponent/" title="Widget" class="md-nav__link">
+      Widget
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2" type="checkbox" id="nav-5-3-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2">
+      Interfaces
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-2">
+        Interfaces
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-1" type="checkbox" id="nav-5-3-3-2-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_collaboration_.collaboration/" title="Collaboration" class="md-nav__link">
+      Collaboration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_collaboration_.collaborationevent/" title="Collaboration Event" class="md-nav__link">
+      Collaboration Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_projections_.geohashaggregation/" title="GeoHash Aggregation" class="md-nav__link">
+      GeoHash Aggregation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_projections_.tiledsearch/" title="Tiled Search" class="md-nav__link">
+      Tiled Search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2" type="checkbox" id="nav-5-3-3-2-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-1" type="checkbox" id="nav-5-3-3-2-2-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-1">
+      Common
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-1">
+        Common
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.elementidentifier/" title="ElementIdentifier" class="md-nav__link">
+      ElementIdentifier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-2" type="checkbox" id="nav-5-3-3-2-2-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-2">
+      Donut
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-2">
+        Donut
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.selectiontree/" title="SelectionTree" class="md-nav__link">
+      SelectionTree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.simplenode/" title="SimpleNode" class="md-nav__link">
+      SimpleNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.treenode/" title="TreeNode" class="md-nav__link">
+      TreeNode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-3" type="checkbox" id="nav-5-3-3-2-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-3">
+      Histogram
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-3">
+        Histogram
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.selectedoutputvalues/" title="SelectedOutputValues" class="md-nav__link">
+      SelectedOutputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.timeshortcut/" title="TimeShortcut" class="md-nav__link">
+      TimeShortcut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.stringifiedtimeshortcut/" title="StringifiedTimeShortcut" class="md-nav__link">
+      StringifiedTimeShortcut
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-4" type="checkbox" id="nav-5-3-3-2-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-4">
+      Map
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-4">
+        Map
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.onmoveresult/" title="OnMoveResult" class="md-nav__link">
+      OnMoveResult
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_contributors_mapcontributor_.style.md" title="Style" class="md-nav__link">
+      Style
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-5" type="checkbox" id="nav-5-3-3-2-2-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-5">
+      ResultList
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-5">
+        ResultList
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.action/" title="Action" class="md-nav__link">
+      Action
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.column/" title="Column" class="md-nav__link">
+      Column
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.detail/" title="Detail" class="md-nav__link">
+      Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_contributors_resultlistcontributor_.detaileddataretriever/" title="DetailedDataRetriever" class="md-nav__link">
+      DetailedDataRetriever
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.field/" title="Field" class="md-nav__link">
+      Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.fielddetail/" title="FieldDetail" class="md-nav__link">
+      FieldDetail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.fieldsconfiguration/" title="FieldsConfiguration" class="md-nav__link">
+      FieldsConfiguration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-6" type="checkbox" id="nav-5-3-3-2-2-6">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-6">
+      WMTS Manager
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-6">
+        WMTS Manager
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.dimension/" title="Dimension" class="md-nav__link">
+      Dimension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.gettilesinfo/" title="TilesInfo" class="md-nav__link">
+      TilesInfo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.layerparam/" title="LayerParam" class="md-nav__link">
+      LayerParam
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3" type="checkbox" id="nav-5-3-3-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-1" type="checkbox" id="nav-5-3-3-2-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-1">
+      Common
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-1">
+        Common
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.elementidentifier/" title="ElementIdentifier" class="md-nav__link">
+      ElementIdentifier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-2" type="checkbox" id="nav-5-3-3-2-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-2">
+      Donut
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-2">
+        Donut
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.donutdimensions/" title="DonutDimensions" class="md-nav__link">
+      DonutDimensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.donutnode/" title="DonutNode" class="md-nav__link">
+      DonutNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.donuttooltip/" title="DonutTooltip" class="md-nav__link">
+      DonutTooltip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.treenode/" title="TreeNode" class="md-nav__link">
+      TreeNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.simplenode/" title="SimpleNode" class="md-nav__link">
+      SimpleNode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-3" type="checkbox" id="nav-5-3-3-2-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-3">
+      Histogram
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-3">
+        Histogram
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.chartaxes/" title="ChartAxes" class="md-nav__link">
+      ChartAxes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.chartdimensions/" title="ChartDimensions" class="md-nav__link">
+      ChartDimensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.histogramdata/" title="HistogramData" class="md-nav__link">
+      HistogramData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.marginmodel/" title="MarginModel" class="md-nav__link">
+      MarginModel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.selectedinputvalues/" title="SelectedInputValues" class="md-nav__link">
+      SelectedInputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.selectedoutputvalues/" title="SelectedOutputValues" class="md-nav__link">
+      SelectedOutputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.swimlaneaxes/" title="SwimlaneAxes" class="md-nav__link">
+      SwimlaneAxes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.swimlanedata/" title="SwimlaneData" class="md-nav__link">
+      SwimlaneData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.swimlaneparseddata/" title="SwimlaneParsedData" class="md-nav__link">
+      SwimlaneParsedData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.tooltip/" title="Tooltip" class="md-nav__link">
+      Tooltip
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-4" type="checkbox" id="nav-5-3-3-2-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-4">
+      Map
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-4">
+        Map
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.basemapstyle/" title="BasemapStyle" class="md-nav__link">
+      BasemapStyle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.basemapstylegroup.md" title="BasemapStyleGroup" class="md-nav__link">
+      BasemapStyleGroup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.externaleventlayer/" title="ExternalEventLayer" class="md-nav__link">
+      ExternalEventLayer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.layerevents/" title="LayerEvents" class="md-nav__link">
+      LayerEvents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.maplayers/" title="MapLayers" class="md-nav__link">
+      MapLayers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_model_mapsource_.mapsource/" title="MapSource" class="md-nav__link">
+      MapSource
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_mapgl_component_.onmoveresult/" title="OnMoveResult" class="md-nav__link">
+      OnMoveResult
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-5" type="checkbox" id="nav-5-3-3-2-3-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-5">
+      Map layer Settings
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-5">
+        Map layer Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.geometryselectmodel/" title="GeometrySelectModel" class="md-nav__link">
+      GeometrySelectModel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.geoquery/" title="GeoQuery" class="md-nav__link">
+      GeoQuery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.mapsettingsservice/" title="MapSettingsService" class="md-nav__link">
+      MapSettingsService
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.operationselectmodel/" title="OperationSelectModel" class="md-nav__link">
+      OperationSelectModel
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-6" type="checkbox" id="nav-5-3-3-2-3-6">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-6">
+      ResultList
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-6">
+        ResultList
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.action/" title="Action" class="md-nav__link">
+      Action
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.additionalinfo/" title="AdditionalInfo" class="md-nav__link">
+      AdditionalInfo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.attachment/" title="Attachment" class="md-nav__link">
+      Attachment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_detailed_data_retriever_.detaileddataretriever/" title="DetailedDataRetriever" class="md-nav__link">
+      DetailedDataRetriever
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.field/" title="Field" class="md-nav__link">
+      Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.fieldsconfiguration/" title="FieldsConfiguration" class="md-nav__link">
+      FieldsConfiguration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.pagequery/" title="PageQuery" class="md-nav__link">
+      PageQuery
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-4" type="checkbox" id="nav-5-3-3-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_src_app_services_bookmark_model_.bookmark/" title="Bookmark Model" class="md-nav__link">
+      Bookmark Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_models_models_.dateexpression/" title="Date Expression (class)" class="md-nav__link">
+      Date Expression (class)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_src_app_services_startup_startup_service_.extraconfig/" title="Extra Configuration" class="md-nav__link">
+      Extra Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3" type="checkbox" id="nav-5-3-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3">
+      Enums
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-3">
+        Enums
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-1" type="checkbox" id="nav-5-3-3-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_collaboration_.operationenum/" title="Operation" class="md-nav__link">
+      Operation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_projections_.projtype/" title="Projection" class="md-nav__link">
+      Projection
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-2" type="checkbox" id="nav-5-3-3-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_models_.dateunitenum/" title="DateUnitEnum" class="md-nav__link">
+      DateUnitEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_contributors_mapcontributor_.fetchtype.md" title="FetchType" class="md-nav__link">
+      FetchType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_models_.sortenum/" title="SortEnum" class="md-nav__link">
+      SortEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_models_.triggertype/" title="TriggerType" class="md-nav__link">
+      TriggerType
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-3" type="checkbox" id="nav-5-3-3-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.charttype/" title="CharType" class="md-nav__link">
+      CharType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.datatype/" title="DataType" class="md-nav__link">
+      DataType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_components_results_utils_enumerations_modeenum_.modeenum/" title="ModeEnum" class="md-nav__link">
+      ModeEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.position/" title="Position" class="md-nav__link">
+      Position
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_components_results_utils_enumerations_sortenum_.sortenum/" title="SortEnum" class="md-nav__link">
+      SortEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.swimlanemode/" title="SwimlaneMode" class="md-nav__link">
+      SwimlaneMode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-4" type="checkbox" id="nav-5-3-3-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_src_app_services_bookmark_model_.bookmarktype/" title="Bookmark Type" class="md-nav__link">
+      Bookmark Type
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-4" type="checkbox" id="nav-5-3-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-4">
+      Services (Components)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-4">
+        Services (Components)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_services_color_generator_service_.arlascolorservice/" title="Color Generator Service" class="md-nav__link">
+      Color Generator Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_componentsutils_.colorgeneratorloader/" title="Color Loader Service" class="md-nav__link">
+      Color Loader Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-5" type="checkbox" id="nav-5-3-3-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-5">
+      Services (Toolkit)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-5">
+        Services (Toolkit)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_aoi_aoi_service_.arlasaoiservice/" title="AOI Service" class="md-nav__link">
+      AOI Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_authentification_authentification_service_.authentificationservice/" title="Authentication Service" class="md-nav__link">
+      Authentication Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_bookmark_bookmark_service_.arlasbookmarkservice/" title="Bookmark Service" class="md-nav__link">
+      Bookmark Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_color_generator_loader_color_generator_loader_service_.arlascolorgeneratorloader/" title="Color Loader Service" class="md-nav__link">
+      Color Loader Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_startup_service_.arlascollaborativesearchservice/" title="Collaborative Search Service" class="md-nav__link">
+      Collaborative Search Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_startup_service_.arlasconfigservice/" title="Configuration Service" class="md-nav__link">
+      Configuration Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_contributorbuilder_.contributorbuilder/" title="Contributor Builder" class="md-nav__link">
+      Contributor Builder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_date_picker_arlastranslateintl_.arlastranslateintl/" title="DatePicker Translate Service" class="md-nav__link">
+      DatePicker Translate Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_export_csv_export_csv_service_.arlasexportcsvservice/" title="Export as CSV Service" class="md-nav__link">
+      Export as CSV Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_extend_extend_service_.arlasextendservice/" title="Extent Service" class="md-nav__link">
+      Extent Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_map_settings_map_settings_service_.arlasmapsettings/" title="Map layers settings Service" class="md-nav__link">
+      Map layers settings Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_startup_service_.arlasstartupservice/" title="Startup Service" class="md-nav__link">
+      Startup Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../style-your-components/" title="Styling" class="md-nav__link">
+      Styling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-compatibility/" title="Compatibility Rules" class="md-nav__link">
+      Compatibility Rules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../versions/" title="Component Versions" class="md-nav__link">
+      Component Versions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BROWSER_COMPATIBILITY/" title="Browsers compatibility" class="md-nav__link">
+      Browsers compatibility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../changelogs/" title="What's new?" class="md-nav__link">
+      What's new?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
+    
+    <label class="md-nav__link" for="nav-5-8">
+      Architectural Decision Records
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-8">
+        Architectural Decision Records
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../adr/ADR-001-Timeline_exploration_multicollection/" title="ADR 001" class="md-nav__link">
+      ADR 001
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../about-arlas/" title="About ARLAS" class="md-nav__link">
+      About ARLAS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq-arlas/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#url-schema" class="md-nav__link">
+    URL Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#url-parts" class="md-nav__link">
+    URL Parts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-aggregation" class="md-nav__link">
+    Part: aggregation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-filter" class="md-nav__link">
+    Part: filter
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-filter-parameters" class="md-nav__link">
+    Available filter parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-parameters-algebra" class="md-nav__link">
+    Filter parameters algebra
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-parameter-syntax" class="md-nav__link">
+    f parameter syntax
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#special-syntax-for-date-queries-using-lt-gt-lte-gte-and-range-operations" class="md-nav__link">
+    Special syntax for date queries using lt, gt, lte, gte and range operations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partition-filtering" class="md-nav__link">
+    Partition filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-filtering" class="md-nav__link">
+    Column filtering
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-form" class="md-nav__link">
+    Part: form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-field" class="md-nav__link">
+    Part: field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-projection" class="md-nav__link">
+    Part: projection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-returned_geometries" class="md-nav__link">
+    Part: returned_geometries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-suggest" class="md-nav__link">
+    Part: suggest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-page" class="md-nav__link">
+    Part: page
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sort-parameter" class="md-nav__link">
+    sort parameter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-and-before-parameter" class="md-nav__link">
+    after and before parameter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opensearch" class="md-nav__link">
+    OpenSearch
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="arlas-exploration-api">ARLAS Exploration API</h1>
+<p>The ARLAS API makes the ARLAS catalog available for exploration and browsing. The catalog contains collections of geo-referenced elements. Every element has a geometry, a centroid, a timestamp and a set of fields specific to the collection.</p>
+<h2 id="url-schema">URL Schema</h2>
+<p>The table below lists the URL endpoints and their optional "parts". A part is composed of optional parameters. The parameters are separated with the character <code>&amp;</code>.</p>
+<table>
+<thead>
+<tr>
+<th>PATH Template</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/arlas/explore/<strong>_list</strong></td>
+<td>List  the collections configured in ARLAS</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_describe</strong>?<code>form</code></td>
+<td>Describes the structure and the content of the given collection</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_count</strong>?<code>filter</code> &amp; <code>form</code></td>
+<td>Counts the number of elements found in the collection, given the filters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_compute</strong>?<code>compute</code> &amp; <code>filter</code> &amp; <code>form</code></td>
+<td>Computes the metric of a field in the collection, given the filters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_search</strong>?<code>filter</code> &amp; <code>form</code> &amp; <code>projection</code> &amp; <code>page</code> &amp; <code>returned_geometries</code></td>
+<td>Search and return the elements found in the collection, given the filters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_geosearch</strong>?<code>filter</code> &amp; <code>form</code> &amp; <code>projection</code> &amp; <code>page</code> &amp; <code>returned_geometries</code></td>
+<td>Search and return the elements found in the collection as features, given the filters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_geosearch</strong>/<code>{z}</code>/<code>{x}</code>/<code>{y}</code>?<code>filter</code> &amp; <code>form</code> &amp; <code>projection</code> &amp; <code>page</code> &amp; <code>returned_geometries</code></td>
+<td>Search and return the elements found in the collection and localized in the given tile(x,y,z) as features, given the filters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_aggregate</strong>?<code>aggregation</code> &amp;<code>filter</code> &amp; <code>form</code></td>
+<td>Aggregate the elements in the collection(s), given the filters and the aggregation parameters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_geoaggregate</strong>?<code>aggregation</code> &amp;<code>filter</code> &amp; <code>form</code></td>
+<td>Aggregate the elements in the collection(s) as features, given the filters and the aggregation parameters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_geoaggregate</strong>/<code>{geohash}</code>?<code>aggregation</code> &amp;<code>filter</code> &amp; <code>form</code></td>
+<td>Aggregate the elements in the collection(s) and localized in the given <code>{geohash}</code> as features, given the filters and the aggregation parameters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_geoaggregate</strong>/<code>{z}</code>/<code>{x}</code>/<code>{y}</code>?<code>aggregation</code> &amp;<code>filter</code> &amp; <code>form</code></td>
+<td>Aggregate the elements in the collection(s) and localized in the given <code>zxy</code> tile as features, given the filters and the aggregation parameters</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_suggest</strong>?<code>filter</code> &amp; <code>form</code> &amp; <code>size</code> &amp; <code>suggest</code></td>
+<td>Suggest the the n (n=<code>size</code>) most relevant terms given the filters</td>
+</tr>
+</tbody>
+</table>
+<p>When multiple collections are permitted ({collections}), the comma is used for separating the collection names.</p>
+<table>
+<thead>
+<tr>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>https://api.gisaia.com/demo/arlas/explore/<code>_describe</code></td>
+</tr>
+<tr>
+<td>https://api.gisaia.com/demo/arlas/explore/<code>city,state,country</code>/<code>_describe</code></td>
+</tr>
+<tr>
+<td>https://api.gisaia.com/demo/arlas/explore/<code>city,state,country</code>/<code>_count</code>?<code>q=bord*</code>&amp;<code>f=country:France</code>&amp;<code>pretty=true</code></td>
+</tr>
+<tr>
+<td>https://api.gisaia.com/demo/arlas/explore/<code>election</code>/<code>_search</code>?<code>f=country:France</code>&amp;<code>f=$timestamp:range:[0&lt;1490613808000]</code>&amp;<code>pretty=true</code>&amp;<code>size=1000</code>&amp;<code>include=id,name</code></td>
+</tr>
+<tr>
+<td>https://api.gisaia.com/demo/arlas/explore/<code>election</code>/<code>_aggregate</code>?<code>f=country:France</code>&amp;<code>f=$timestamp:range:[0&lt;1490613808000]</code>&amp;<code>pretty=true</code>&amp;<code>size=1000</code>&amp;<code>include=id,name</code>&amp;<code>agg=geohash</code>&amp;<code>agg_interval=4</code></td>
+</tr>
+</tbody>
+</table>
+<p>All URLs are accessible both with GET and POST requests. For POST requests, URL parts are passed as a JSON representation.</p>
+<h2 id="url-parts">URL Parts</h2>
+<h3 id="part-aggregation">Part: <code>aggregation</code></h3>
+<p>The [<code>aggregation</code>] url part allows the following parameters to be specified:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>agg</strong></td>
+<td><code>None</code></td>
+<td>Gathers a set of sub-parameters indicating the type of aggregation, the field used as the aggregation key and possibly the interval for numeric values</td>
+<td>true for _aggregate only</td>
+</tr>
+</tbody>
+</table>
+<p>The agg parameter should be given in the following format :</p>
+<ul>
+<li>{type}:{field}:interval-{interval}:format-{format}:collect_field-{collect_field}:collect_fct-{function}:order-{order}:on-{on}:size-{size}</li>
+</ul>
+<p>Where the <code>{type}:{field}</code> part is mandatory</p>
+<p>The other parts must be specified or not depending on the aggregation type. All the cases are sum up in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Aggregation type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>interval</strong></td>
+<td><code>datehistogram, histogram, geohash, geotile</code></td>
+<td>mandatory</td>
+</tr>
+<tr>
+<td><strong>format</strong></td>
+<td><code>datehistogram</code></td>
+<td>optional (default value : <code>yyyy-MM-dd-HH:mm:ss</code>)</td>
+</tr>
+<tr>
+<td>(<strong>collect_field</strong>,<strong>collect_fct</strong>)</td>
+<td>All types</td>
+<td>optional and multiple</td>
+</tr>
+<tr>
+<td>(<strong>order</strong>,<strong>on</strong>)</td>
+<td><code>term, histogram, datehistogram</code></td>
+<td>optional</td>
+</tr>
+<tr>
+<td><strong>size</strong></td>
+<td><code>term, geohash, geotile</code></td>
+<td>optional</td>
+</tr>
+<tr>
+<td><strong>include</strong></td>
+<td><code>term</code></td>
+<td>optional</td>
+</tr>
+<tr>
+<td><strong>aggregated_geometries</strong></td>
+<td>All types</td>
+<td>optional</td>
+</tr>
+<tr>
+<td><strong>raw_geometries</strong></td>
+<td>All types</td>
+<td>optional</td>
+</tr>
+<tr>
+<td><strong>fetch_hits</strong></td>
+<td>All types</td>
+<td>optional</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: <code>agg=datehistogram:date:interval-20day:format-dd.MM.yyyy</code>&amp;<code>agg=term:sexe:collect_field-age:collect_fct-avg:order-asc:on-result:size-5</code></p>
+</blockquote>
+<p>The sub-parameters possible values are:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Values</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>{type}</strong></td>
+<td><code>datehistogram</code>, <code>histogram</code>, <code>geohash</code>, <code>geotile</code>, <code>term</code></td>
+<td>Type of aggregation</td>
+</tr>
+<tr>
+<td><strong>{field}</strong></td>
+<td>{field}</td>
+<td>Aggregates on {field}</td>
+</tr>
+<tr>
+<td><strong>interval</strong></td>
+<td>{interval}</td>
+<td>Size of the intervals.(1)</td>
+</tr>
+<tr>
+<td><strong>format</strong></td>
+<td><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-daterange-aggregation.html#date-format-pattern">Date format</a> for key aggregation</td>
+<td>Date format for key aggregation.</td>
+</tr>
+<tr>
+<td><strong>collect_field</strong></td>
+<td><code>{collect_field}</code></td>
+<td>The field used to aggregate collections.</td>
+</tr>
+<tr>
+<td><strong>collect_fct</strong></td>
+<td><code>avg,cardinality,max,min,sum,geobbox,geocentroid (2)</code></td>
+<td>The aggregation function to apply to collections on the specified <strong>collect_field</strong>.</td>
+</tr>
+<tr>
+<td><strong>order</strong></td>
+<td><code>asc,desc</code></td>
+<td>Sorts the aggregation buckets on the field name, on the count of the buckets or on the the result of a metric sub-aggregation, ascending or descending.</td>
+</tr>
+<tr>
+<td><strong>on</strong></td>
+<td><code>field,count,result</code> (3) (3')</td>
+<td>{on} is set to specify whether the <strong>order</strong> is on the field name, on the count of the aggregation or the result of a metric subaggregation.</td>
+</tr>
+<tr>
+<td><strong>size</strong></td>
+<td>{size}</td>
+<td>Defines how many buckets should be returned.</td>
+</tr>
+<tr>
+<td><strong>include</strong></td>
+<td>Comma separated strings (4)</td>
+<td>Specifies the values for which buckets will be created.</td>
+</tr>
+<tr>
+<td><strong>aggregated_geometries</strong></td>
+<td>Comma separated strings : <code>bbox</code>, <code>centroid</code>, <code>tile_center</code>, <code>tile</code></td>
+<td>Allows to specify a list of aggregated forms of geometries that represent the bucket (5)(6)</td>
+</tr>
+<tr>
+<td><strong>raw_geometries</strong></td>
+<td><code>{geo_field1}(+{field1}, ...);{geo_field2}(-{field2}, ...)</code></td>
+<td>Allows to specify a list of raw geometries provided by hits that represent the bucket and that are elected by a sort (7)(8)</td>
+</tr>
+<tr>
+<td><strong>fetch_hits</strong></td>
+<td><code>{optionalNumberOfHist}(+{field1}, {field2}, -{field3}, ...)</code></td>
+<td>Specifies the number of hits to retrieve inside each aggregation bucket and which fields to include in the hits. The hits can be sorted according 0-* fields by preceding the field name by <code>+</code> for ascending sort, <code>-</code> for descending sort or nothing if no sort is desired on a field.(9)</td>
+</tr>
+</tbody>
+</table>
+<p>(1) Each aggregation type ({type}) has its own type of interval. The table below lists the semantic of the interval sub-parameter.</p>
+<p>(2) (<strong>collect_field</strong>,<strong>collect_fct</strong>) should both be specified.
+It's possible to apply multiple metric aggregations by defining multiple (<strong>collect_field</strong>,<strong>collect_fct</strong>) couples.
+They should be unique in that case.
+The metrics <code>geobbox</code> and <code>geocentroid</code> are returned as features collections.</p>
+<p>(3) When <strong>on</strong> is <code>result</code>, then (<strong>collect_field</strong>,<strong>collect_fct</strong>) should be specified. Except when <strong>collect_fct</strong> = <code>geobbox</code> or <code>geocentroid</code>, then <strong>on</strong>=<code>result</code> is prohibited .</p>
+<p>(3') If <strong>on</strong> is equal to <code>result</code> and two or more (<strong>collect_field</strong>,<strong>collect_fct</strong>) couples are specified, then the order is applied on the first <code>collect_fct</code> different from <code>geobbox</code> and <code>geobbox</code>".</p>
+<blockquote>
+<p>Example: <code>agg=term:sexe:collect_field-location:collect_fct-geobbox:collect_field-age:collect_fct-avg:collect_field-height:collect_fct-max:order-asc:on-result</code></p>
+</blockquote>
+<p>The <code>order</code> is applied on the first collect_fct <code>avg</code> (that is different from <code>geobbox</code>).</p>
+<p>(4) If one value is specified then regular expressions can be used (only in this case) and buckets matching them will be created. If more than one value are specified then only buckets matching the exact values will be created.</p>
+<p>(5) Available aggregated geometries :</p>
+<ul>
+<li><code>bbox</code>: returns the data extent (bbox) inside the bucket.</li>
+<li><code>centroid</code>: returns the centroid of data inside the bucket.</li>
+<li><code>tile</code>: returns the tile extent (zxy or geohash) of each bucket. This form is supported for <strong>geohash</strong> and <strong>geotile</strong> aggregation type only.</li>
+<li><code>tile_center</code>: returns the 'center' of the tile extent that represents the bucket. This form is supported for <strong>geohash</strong> and <strong>geotile</strong> aggregation type only.</li>
+</ul>
+<p>(6) The response:</p>
+<ul>
+<li>For <code>_aggregate</code> service: the aggregated geometries are returned in <code>geometries</code> list in the json response. Each object inside this list has : the <code>reference</code> to the aggregated form, the geojson <code>geometry</code> and an attribute <code>is_raw</code> set to false. </li>
+<li>For <code>_geoaggregate</code> service: each bucket of the aggregation will be represented with as many features (in a feature collection) as there are specified aggregated geometries. The properties of each feature has :<ul>
+<li><strong>geometry_ref</strong> attribute that informs which aggregated form is returned.</li>
+<li><strong>geometry_type</strong> attribute set to <em>aggregated</em>.</li>
+</ul>
+</li>
+</ul>
+<p>(7) Any field of the collection whose type is <strong>geo-point</strong> or <strong>geo-shape</strong> can be set in <code>raw_geometries</code>.</p>
+<ul>
+<li>Sort fields are optional. If no sort is specified, an ascending sort on <code>collection.params.timestamp_path</code> is applied.</li>
+<li>A sort field can be preceded by '-' for descending sort. Otherwise the sort is ascending</li>
+</ul>
+<p>(8) The response :</p>
+<ul>
+<li>For <code>_aggregate</code> service: the aggregated geometries are returned in <code>geometries</code> list in the json response. Each object inside this list has : the <code>reference</code> to the geometry path, the used sort, the geojson <code>geometry</code> and an attribute <code>is_raw</code> set to true. </li>
+<li>For <code>_geoaggregate</code> service: each bucket of the aggregation will be represented with as many features (in a feature collection) as there are specified raw geometries. The properties of each feature has :<ul>
+<li><strong>geometry_ref</strong> attribute that informs which geometry path is returned.</li>
+<li><strong>geometry_type</strong> attribute set to <em>raw</em>.</li>
+<li><strong>geometry_sort</strong> attribute that informs how the geometry path is fetched (with what sort).</li>
+<li>
+<blockquote>
+<p>Example: <code>raw_geometries-geo_field1,geo_field2  ||  raw_geometries-geo_field(-field1,field2) || raw_geometries-geo_field1(field1);geo_field2(field2,field3)</code>
+(9)</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>Example: <code>fetch_hits-3(-timestamp, geometry)</code>. The 3 last positions are retrieved for each bucket </p>
+</blockquote>
+</li>
+</ul>
+<p><em>Note</em> that if the number of hits to fetch is not specified, 1 is considered as default.</p>
+<ul>
+<li>
+<blockquote>
+<p>Example: <code>fetch_hits:(-timestamp, geometry)</code>. The last position is retrieved for each bucket </p>
+</blockquote>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Aggregation type</th>
+<th>Interval</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><em>_aggregate</em></strong></td>
+<td><strong><em>datehistogram</em></strong></td>
+<td><code>{size}(year,quarter,month,week,day,hour,minute,second)</code></td>
+<td>Size of a time interval with the given unit (no space between number and unit). Size must be equal to 1 for year, quarter, month and week</td>
+</tr>
+<tr>
+<td><strong><em>_geoaggregate</em></strong></td>
+<td><strong><em>geohash</em></strong></td>
+<td><code>{length}</code></td>
+<td>The geohash length: lower the length, greater is the surface of aggregation. See table below.</td>
+</tr>
+<tr>
+<td><strong><em>_geoaggregate</em></strong></td>
+<td><strong><em>geotile</em></strong></td>
+<td><code>{zoom}</code></td>
+<td>The tile zoom: lower the zoom, greater is the surface of aggregation.</td>
+</tr>
+<tr>
+<td><strong><em>_aggregate</em></strong></td>
+<td><strong><em>histogram</em></strong></td>
+<td><code>{size}</code></td>
+<td>The interval size of the numeric aggregation</td>
+</tr>
+<tr>
+<td><strong><em>_aggregate</em></strong></td>
+<td><strong><em>term</em></strong></td>
+<td>None</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>The table below shows the metric dimensions for cells covered by various string lengths of geohash. Cell dimensions vary with latitude and so the table is for the worst-case scenario at the equator.</p>
+<table>
+<thead>
+<tr>
+<th>GeoHash length</th>
+<th>Area width x height</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5,009.4km x 4,992.6km</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1,252.3km x 624.1km</td>
+</tr>
+<tr>
+<td>3</td>
+<td>156.5km x 156km</td>
+</tr>
+<tr>
+<td>4</td>
+<td>39.1km x 19.5km</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4.9km x 4.9km</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1.2km x 609.4m</td>
+</tr>
+<tr>
+<td>7</td>
+<td>152.9m x 152.4m</td>
+</tr>
+<tr>
+<td>8</td>
+<td>38.2m x 19m</td>
+</tr>
+<tr>
+<td>9</td>
+<td>4.8m x 4.8m</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1.2m x 59.5cm</td>
+</tr>
+<tr>
+<td>11</td>
+<td>14.9cm x 14.9cm</td>
+</tr>
+<tr>
+<td>12</td>
+<td>3.7cm x 1.9cm</td>
+</tr>
+</tbody>
+</table>
+<p><strong>agg</strong> parameter is multiple. Every agg parameter specified is a subaggregation of the previous one : the order matters.</p>
+<p>For <strong>_geoaggregate</strong> service, the first (main) aggregation must be geohash,or geotile.</p>
+<hr />
+<h3 id="part-filter">Part: <code>filter</code></h3>
+<h4 id="available-filter-parameters">Available filter parameters</h4>
+<p>The <code>filter</code> url part allows the following parameters to be specified:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Values</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>f</strong></td>
+<td>None</td>
+<td><code>{fieldName}{operator}{value}</code></td>
+<td>A triplet for filtering the result. Multiple filter can be provided. The order does not matter. A triplet is composed of a field name, a comparison operator and a value. The <strong>AND</strong> operator is applied between filters. For the <strong><code>:eq:</code></strong> and <strong><code>:range:</code></strong> filters, values can be comma separated (field<code>:eq:</code>v1,v2) which stands for an <strong>OR</strong>. For the <strong><code>:ne:</code></strong>  filter, values can be comma separated (field<code>:ne:</code>v1,v2) which stands for an <strong>AND</strong></td>
+<td>true</td>
+</tr>
+<tr>
+<td><strong>q</strong></td>
+<td>None</td>
+<td><code>{text}</code> or <code>{fieldname}:{text}</code></td>
+<td>A full text search. Optionally, it's possible to search the text on a specific field</td>
+<td>false</td>
+</tr>
+<tr>
+<td><strong>dateformat</strong></td>
+<td>None</td>
+<td><a href="https://www.joda.org/joda-time/apidocs/org/joda/time/format/DateTimeFormat.html">Joda time pattern</a></td>
+<td>A date format pattern that respects the Joda-time syntax</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Important</p>
+<p>The given BBOX must respect the following rules :
+- <code>west</code> and <code>east</code> must be between -180 and 180 inclusive
+- <code>west</code> must be different from <code>east</code> (west=east is invalid)
+- You can specify <code>west</code>&gt;<code>east</code> which means the bbox crosses the dateline
+- <code>south</code> and <code>north</code> must be between -90 and 90 inclusive and <code>south</code>&lt;<code>north</code></p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Important</p>
+<p>For parameters that accept WKT, in case of a <strong>Polygon</strong> or <strong>MultiPolygon</strong>, the orientation should be clock-wise (right). Otherwise, ARLAS-server will attempt to parse it as the "Complementary" Polygon on the other facet of the planet.
+For instance the polygon <code>POLYGON  ((-170 -10, -175 10, 175 10, 170 -10, -170 -10))</code> is counter clock-wise. If it's passed as a parameter, ARLAS-server will interpret it as the Polygon that crosses the dateline <code>POLYGON  ((-170 -10, -175 10, 185 10, 180 -10, -170 -10))</code> which is clock-wise.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Important</p>
+<p>Coordinates of the given <strong>WKT</strong> must be contained in the Envelope -360, 360, -180, 180</p>
+</div>
+<h4 id="filter-parameters-algebra">Filter parameters algebra</h4>
+<p>For each parameter, you can provide multiple filters. There are 2 different ways to do this :
+- in distinct filter parameters = <strong>AND</strong> operator between filters
+- in the same filter parameter as a semi-colon separated list = <strong>OR</strong> operator between filters</p>
+<table>
+<thead>
+<tr>
+<th>Multiple type</th>
+<th>Example</th>
+<th>Operator</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distinct filter parameters</td>
+<td><code>f=age:gte:18&amp;f=age:lte:60</code></td>
+<td><strong>AND</strong></td>
+<td>elements whose/which age between 18 and 60</td>
+</tr>
+<tr>
+<td>Same filter parameter</td>
+<td><code>f=age:gte:18;age:lte:60</code></td>
+<td><strong>OR</strong></td>
+<td>elements with any age</td>
+</tr>
+</tbody>
+</table>
+<p>Of course, you can combine both way to handle complex multiple filters for each filter parameter type.</p>
+<h4 id="f-parameter-syntax"><code>f</code> parameter syntax</h4>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Value type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>:eq:</code></strong></td>
+<td><code>{fieldName}</code> equals <code>{comma separated values}</code>. <strong>OR</strong> operation is applied for the specified values</td>
+<td>numeric or strings</td>
+</tr>
+<tr>
+<td><strong><code>:ne:</code></strong></td>
+<td><code>{fieldName}</code> must not equal <code>{comma separated values }</code>. <strong>AND</strong> operation is applied for the specified values</td>
+<td>numeric or strings</td>
+</tr>
+<tr>
+<td><strong><code>:like:</code></strong></td>
+<td><code>{fieldName}</code> is like <code>{value}</code>.</td>
+<td>numeric or strings</td>
+</tr>
+<tr>
+<td><strong><code>:gte:</code></strong></td>
+<td><code>{fieldName}</code> is greater than or equal to <code>{value}</code></td>
+<td>numeric</td>
+</tr>
+<tr>
+<td><strong><code>:gt:</code></strong></td>
+<td><code>{fieldName}</code> is greater than <code>{value}</code></td>
+<td>numeric</td>
+</tr>
+<tr>
+<td><strong><code>:lte:</code></strong></td>
+<td><code>{fieldName}</code> is less than or equal to <code>{value}</code></td>
+<td>numeric</td>
+</tr>
+<tr>
+<td><strong><code>:lt:</code></strong></td>
+<td><code>{fieldName}</code> is less than <code>{value}</code></td>
+<td>numeric</td>
+</tr>
+<tr>
+<td><strong><code>:range:</code></strong></td>
+<td><code>{fieldName}</code> is between <code>{comma separated [min&lt;max] values}</code>. <strong>OR</strong> operation is applied for the specified ranges</td>
+<td>numeric or strings. If the field's type is date, min &amp; max should be timestamps in millisecond or <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math">Date expression</a>  Note that dates in date expressions can either be <code>now</code> or timestamp in millisecond. Other date formats are not supported.</td>
+</tr>
+<tr>
+<td><strong><code>:within:</code></strong></td>
+<td><code>{GeofieldName}</code> is within the <code>{given WKT string or the given BBOX : west, south, east, north}</code>.</td>
+<td>a WKT string or the BBOX string : <code>"west, south, east, north"</code></td>
+</tr>
+<tr>
+<td><strong><code>:notwithin:</code></strong></td>
+<td><code>{GeofieldName}</code> is not within the <code>{given WKT string or the given BBOX : west, south, east, north}</code>.</td>
+<td>a WKT string or the BBOX string : <code>"west, south, east, north"</code></td>
+</tr>
+<tr>
+<td><strong><code>:intersects:</code></strong></td>
+<td><code>{GeofieldName}</code> intersects the <code>{given WKT string or the given BBOX : west, south, east, north}</code>.</td>
+<td>a WKT string or the BBOX string : <code>"west, south, east, north"</code></td>
+</tr>
+<tr>
+<td><strong><code>:notintersects:</code></strong></td>
+<td><code>{GeofieldName}</code> does not intersect the <code>{given WKT string or the given BBOX : west, south, east, north}</code>.</td>
+<td>a WKT string or the BBOX string : <code>"west, south, east, north"</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>:range:</code> operator has a specific syntax to indicates if range bounds are taken into account or not.</p>
+<table>
+<thead>
+<tr>
+<th>Range operator syntax</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x:range:]min&lt;max[</code></td>
+<td>min&lt;x&lt;max</td>
+</tr>
+<tr>
+<td><code>x:range:[min&lt;max]</code></td>
+<td>min&lt;=x&lt;=max</td>
+</tr>
+<tr>
+<td><code>x:range:]min&lt;max]</code></td>
+<td>min&lt;x&lt;=max</td>
+</tr>
+<tr>
+<td><code>x:range:[min&lt;max[</code></td>
+<td>min&lt;=x&lt;max</td>
+</tr>
+<tr>
+<td><code>x:range:]min1&lt;max1[,]min2&lt;max2[</code></td>
+<td>min1&lt;x&lt;max1 OR min2&lt;x&lt;max2</td>
+</tr>
+</tbody>
+</table>
+<p>On top of that, <code>:range:</code> operator supports generic aliases to represent collection configured fields :
+* <code>$timestamp</code> refers to collection's timestamp field.</p>
+<blockquote>
+<p>Example: <code>f=city:eq:Toulouse&amp;f=city:eq:Bordeaux&amp;f=$timestamp:range:[0&lt;1490613808000]</code></p>
+</blockquote>
+<h6 id="special-syntax-for-date-queries-using-lt-gt-lte-gte-and-range-operations">Special syntax for date queries using <em>lt</em>, <em>gt</em>, <em>lte</em>, <em>gte</em> and <em>range</em> operations</h6>
+<p>In the case of <code>lt</code>, <code>gt</code>, <code>lte</code>, <code>gte</code>, <code>range</code> operations that are applied on <em>date fields</em>, the <em>date values</em> have four possible forms :</p>
+<ul>
+<li>a timestamp in millisecond OR a date in a custom format(*).</li>
+<li>a timestamp in millisecond OR a date in a custom format(*) followed by <code>||</code> and followed by a date <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math">operation</a> (+1h, /M, -2y, ...)</li>
+<li><code>now</code></li>
+<li><code>now</code> followed by a date <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html#date-math">operation</a> (+1h, /M, -2y, ...)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>(*) If a custom format is given in the query, then the <code>dateformat</code> parameter must be set.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>dateformat</code> parameter must not contain <code>||</code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>dateformat</code> parameter can be set only if a date field is queried in <code>f</code> param; when using <code>gt</code>, <code>lt</code>, <code>gte</code>, <code>lte</code> and <code>range</code> operations.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some examples of dates operations :</p>
+<ul>
+<li>
+<p>+1h : adds one hour</p>
+</li>
+<li>
+<p>-1M : substracts one month</p>
+</li>
+<li>
+<p>/d : rounds up or down to the nearest day</p>
+</li>
+</ul>
+<p>The date is rounded up when using <code>lte</code> and <code>gt</code> and rounded down when using <code>lt</code> and <code>gte</code></p>
+<p>A date operation can be the concatenation of an <code>add/substract</code> operation and a <code>round</code> operation : i.e <code>now-1M/d</code></p>
+</div>
+<blockquote>
+<p>The date expression: <code>timestamp:gte:now-1M/M</code> substracts 1 month from now then the resulted date is rounded down to the beginning of the month.
+Assuming <code>now</code> is 2018-06-15. <code>timestamp:gte:now-1M/M</code> is equivalent to <code>timestamp:gte:2016-05-01</code></p>
+</blockquote>
+<h4 id="partition-filtering">Partition filtering</h4>
+<p><code>filter</code> part can also be passed in request header <code>partition-filter</code> as a serialized json for partitioning concerns.</p>
+<blockquote>
+<p>Example: <code>curl --header "partition-filter: {f":[[{"field":"city","op":"eq","value":"Bordeaux"}]]}" https://api.gisaia.com/demo/arlas/explore/cities/_count</code></p>
+</blockquote>
+<h4 id="column-filtering">Column filtering</h4>
+<p>A coma-separated list of columns can be passed in request header <code>column-filter</code>. Wildcards are supported.</p>
+<p>A column filter stands for the fields that are available to a request body:</p>
+<ul>
+<li>if a request body field doesn't belong to the column filter, a 403 is returned with the message <code>The field '%s' isn't available</code> or <code>The fields '%s' aren't available</code>;</li>
+<li>only fields that belong to the column filter can be returned. </li>
+</ul>
+<p>A column filter can be related to a collection, e.g. <code>mycollection:myfield</code> or it can be related to every collection, e.g. <code>myfield</code>. Trying to access a collection with no available field returns a 403.
+Collection names can be omitted or end with a '*'.</p>
+<p>Examples of <code>column-filter</code>:</p>
+<ul>
+<li><code>mycollection:params.city,mycollection:params.country</code> makes available <code>params.city</code> and <code>params.country</code> for collection <code>mycollection</code></li>
+<li><code>mycollection*:params.city</code> makes available <code>params.city</code> for all collections whose names start with <code>mycollection</code></li>
+<li><code>params</code>, <code>params*</code>, <code>params.*</code>, <code>*params</code> make available <code>params.city</code>, <code>params.country</code>, <code>params.weight</code>, and so on. for every collection</li>
+<li><code>params</code>, <code>:params</code>, <code>*:params</code> make available <code>params</code> and subfields for every collection</li>
+<li><code>*</code> makes all fields available</li>
+<li><code>*.*</code> makes only subfields available, e.g. <code>params.city</code> and <code>params.country</code> but not <code>id</code></li>
+</ul>
+<p>If no column filter, or a blank column filter is provided, then no filtering is done.</p>
+<p>The following endpoints use this header:</p>
+<table>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>Filtering result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/arlas/explore/<strong>_list</strong></td>
+<td>Only fields and collections matching this filter will be returned (if no field of a collection is available, this one is not returned at all).</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_describe</strong></td>
+<td>Only fields matching this filter will be returned. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_count</strong></td>
+<td>Return a 403 if one of the filter fields is not in the column filter. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_compute</strong></td>
+<td>Return a 403 if the field, or one of the filter fields, is not in the column filter. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_search</strong></td>
+<td>Return a 403 if one of the filter, projection and page fields is not in the column filter. Otherwise only fields matching the filter will be returned. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_geosearch</strong></td>
+<td>Return a 403 if one of the filter, projection or page fields is not in the column filter. Otherwise only fields matching the filter will be returned. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collection}</code>/<strong>_geosearch/<code>{z}</code>/<code>{x}</code>/<code>{y}</code></strong></td>
+<td>Return a 403 if one of the filter, projection or page fields is not in the column filter. Otherwise only fields matching the filter will be returned. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_aggregate</strong></td>
+<td>Return a 403 if one of the aggregation or filter fields is not in the column filter. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_tile</strong>/<code>{z}</code>/<code>{x}</code>/<code>{y}</code>.png</td>
+<td>Return a 403 if one of the filter, projection or page fields is not in the column filter. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_geoaggregate</strong></td>
+<td>Return a 403 if one of the aggregation or filter fields is not in the column filter. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_geoaggregate</strong>/<code>{geohash}</code></td>
+<td>Return a 403 if one of the aggregation or filter fields is not in the column filter. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/<code>{collections}</code>/<strong>_geoaggregate</strong>/<code>{z}</code>/<code>{x}</code>/<code>{y}</code></td>
+<td>Return a 403 if one of the aggregation or filter fields is not in the column filter. Return a 403 if target collection is not available.</td>
+</tr>
+<tr>
+<td>/arlas/explore/ogc/<strong>opensearch</strong>/{collection}</td>
+<td>Only fields matching this filter will be returned. Return a 403 if target collection is not available.</td>
+</tr>
+</tbody>
+</table>
+<p>On top of that, a query ("q" parameter) filter MUST target a specific field:</p>
+<ul>
+<li><code>fullname:john</code> is valid</li>
+<li><code>john</code> isn't valid and will return a 403</li>
+<li><code>params*:john</code> isn't valid neither and will return a 403</li>
+</ul>
+<p>If a <code>projection</code> with an <code>includes</code> parameter is used, then:</p>
+<ul>
+<li>included fields that are wildcards aren't checked; they do not return a 403 if they don't match the column filter;</li>
+<li>and only included fields that match the column filter are returned</li>
+</ul>
+<hr />
+<h3 id="part-form">Part: <code>form</code></h3>
+<p>The <code>form</code> url part allows the following parameters to be specified:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Values</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>pretty</strong></td>
+<td><code>false</code></td>
+<td><code>true,false</code></td>
+<td>Pretty print</td>
+<td>false</td>
+</tr>
+<tr>
+<td><strong>flat</strong></td>
+<td><code>false</code></td>
+<td><code>true,false</code></td>
+<td>Flats the data property map</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: <code>pretty=true&amp;flat=false</code></p>
+</blockquote>
+<hr />
+<h3 id="part-field">Part: <code>field</code></h3>
+<p>The <code>compute</code> url part is used in <code>_compute</code> service.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Values</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>field</strong></td>
+<td><code>false</code></td>
+<td><code>true,false</code></td>
+<td>The field on which the metric is calculated</td>
+<td>false</td>
+</tr>
+<tr>
+<td><strong>metric</strong></td>
+<td>``</td>
+<td><code>max, min, avg, sum, cardinality, spanning, geobbox, geocentroid</code></td>
+<td>The metric to compute</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>!!! note 'Note'
+    - <code>max</code> : the maximum value of the given field. Field should be numeric or date.
+    - <code>min</code> : the minimum value of the given field. Field should be numeric or date.
+    - <code>avg</code> : the average of the given field values. Field should be numeric or date.
+    - <code>sum</code> : the sum of the given field values. Field should be numeric or date.
+    - <code>cardinality</code> : the number of distinct values of the given field.
+    - <code>spanning</code> : the range value (max-min) of the given field. Field should be numeric or date.
+    - <code>geobbox</code> : the extend of data based on the given geo-point field.
+    - <code>geocentroid</code> : the centroid of data based on the given geo-point field.</p>
+<p>!!! info '_range endpoint is removed'
+    Starting from v13.7.0, <code>_range</code> endpoint is removed. You can use the endpoint <code>_compute</code> instead.
+    - If you used <code>_range</code> to get the <code>(max-min)</code> value of the given field, then you can call :  <code>_compute?field=your_field&amp;metric=spanning</code>
+    - If you used <code>_range</code> to get separately the <code>min</code> and <code>max</code> values of the given field, then you can call <code>_compute</code> twice using <code>_compute?field=your_field&amp;metric=min</code> and <code>_compute?field=your_field&amp;metric=max</code></p>
+<blockquote>
+<p>Example: <code>field=timestamp</code></p>
+</blockquote>
+<hr />
+<h3 id="part-projection">Part: <code>projection</code></h3>
+<p>The <code>projection</code> url part allows the following parameters to be specified:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Values</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>include</strong></td>
+<td><code>*</code></td>
+<td><code>{fieldNamePattern}</code></td>
+<td>List the name patterns of the field to be included in the result. Seperate patterns with a comma.</td>
+<td>true</td>
+</tr>
+<tr>
+<td><strong>exclude</strong></td>
+<td><code>*</code></td>
+<td><code>{fieldNamePattern}</code></td>
+<td>List the name patterns of the field to be excluded in the result. Seperate patterns with a comma.</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: <code>include=*&amp;exclude=city,state</code></p>
+</blockquote>
+<hr />
+<h3 id="part-returned_geometries">Part: <code>returned_geometries</code></h3>
+<p>The <code>returned_geometries</code> url part can be specified in <code>_search</code> &amp; <code>_geosearch</code> services:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Values</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>returned_geometries</strong></td>
+<td></td>
+<td><code>{Comma separated geofieldNamePattern}</code></td>
+<td>Comma separated geometry field_paths to be included in the result. If not specified, only geometry_path is returned. If geometry_path is null, then centroid_path is returned</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: <code>include=*&amp;exclude=city,state</code></p>
+</blockquote>
+<hr />
+<h3 id="part-suggest">Part: <code>suggest</code></h3>
+<p>The <code>suggest</code> url part allows the following parameters to be specified:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Values</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>field</td>
+<td><code>_all</code></td>
+<td><code>{fieldName}</code></td>
+<td>Name of the field to be used for retrieving the most relevant terms</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example: <code>field=recommended</code></p>
+</blockquote>
+<hr />
+<h3 id="part-page">Part: <code>page</code></h3>
+<p>The <code>page</code> url part allows the following parameters to be specified:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default value</th>
+<th>Values</th>
+<th>Description</th>
+<th>Multiple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>size</strong></td>
+<td>10</td>
+<td>&gt; 0</td>
+<td>The maximum number of entries or sub-entries to be returned.</td>
+<td>false</td>
+</tr>
+<tr>
+<td><strong>from</strong></td>
+<td>0</td>
+<td>&gt; 0</td>
+<td>An offset to start the search from. Defaults to 0.</td>
+<td>false</td>
+</tr>
+<tr>
+<td><strong>sort</strong></td>
+<td>None</td>
+<td><code>((-?)({field} OR geodistance:{lat} {lon}))(,(-?){field})*</code></td>
+<td>Sorts the resulted hits on the given fields and/or by distance to a given point</td>
+<td>false (separate fields with comma in the same parameter)</td>
+</tr>
+<tr>
+<td><strong>after</strong></td>
+<td>None</td>
+<td><code>{value1},{value2},...</code></td>
+<td>List of values of fields present in sort param that are used to get the following hits of a previous search</td>
+<td>false (separate values with comma in the same parameter)</td>
+</tr>
+<tr>
+<td><strong>before</strong></td>
+<td>None</td>
+<td><code>{value1},{value2},...</code></td>
+<td>List of values of fields present in sort param that are used to get the precedent hits of a previous search</td>
+<td>false (separate values with comma in the same parameter)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sort-parameter"><code>sort</code> parameter</h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<p><code>sort=((-?)({field} OR geodistance:{lat} {lon}))(,(-?){field})*</code>.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Notes</p>
+<ul>
+<li><code>{field}</code> can be preceded by <strong>'-'</strong>  for <strong>descending</strong> sort. By default, sort is ascending.</li>
+<li>The order of fields matters.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip : geodistance sort</p>
+<p>Along with the comma separated fields, you can add <code>geodistance:{lat} {lon}</code> (at most 1 time) to sort the hits centroids by distance to the given <strong>{lat} {lon}</strong> (ascending sort).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 1</p>
+<p><code>sort=age,-timestamp</code>. Resulted hits are sorted by age. For same age hits, they are decreasingly sorted in time.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 2</p>
+<p><code>sort=age,geodistance:89 179</code>. Resulted hits are sorted by age. For same age hits, they are sorted by the closest distance to the point (89°,179°).</p>
+</div>
+<h4 id="after-and-before-parameter"><code>after</code> and <code>before</code> parameter</h4>
+<div class="admonition info">
+<p class="admonition-title">Important</p>
+<p><strong>after</strong> and <strong>before</strong> parameter work only combined with <strong>sort</strong> parameter.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<p><code>after={value1},{value2},...,{valueN} &amp; sort={field1},{field2},...,{fieldN}</code></p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Notes</p>
+<ul>
+<li><code>{value1}</code> and <code>{value2}</code> are the values of <code>{field1}</code> and <code>{field2}</code> in the last hit returned in the previous search.</li>
+<li>The last field <code>{fieldN}</code> must be the id field specified in the collection <strong>collection.params.idPath</strong> (returned as <strong>md.id</strong>) and <code>{valueN}</code> its corresponding value.</li>
+<li><strong>from</strong> parameter must be set to 0 or kept unset</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">The difference between <code>after</code> and <code>from</code></p>
+<ul>
+<li><code>after</code> is used to scroll over the fetched hits.</li>
+<li><code>from</code> is more an offset from which fetching hits starts and is not exclusively used for scrolling (scrolling is possible by combining <code>from</code> and <code>size</code> parameters).</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>sort=-date,id</code> &amp; <code>after=01/02/2019,abcd1234</code>. Gets the following hits of the previous search that stopped at date <em>01/02/2019</em> and id <em>abcd1234</em>.</p>
+</div>
+<hr />
+<h2 id="opensearch">OpenSearch</h2>
+<p>If enabled, ARLAS offers an Opensearch Description document (<code>/arlas/ogc/opensearch/{collection}</code>).</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../arlas-api/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Overview
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../arlas-api-collection/" title="Collection Managment" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Collection Managment
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

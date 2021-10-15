@@ -1,0 +1,21 @@
+{
+  "aggregations": [
+    {
+      "type": "geohash",
+      "field": "centroid",
+      "interval": {
+        "value": 1
+      }
+    },
+    {
+      "type": "term",
+      "field": "airport_type",
+      "metrics": [
+        {
+          "collectField": "arrival_passengers",
+          "collectFct": "sum"
+        }
+      ]
+    }
+  ]
+}

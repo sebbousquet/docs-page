@@ -1,0 +1,20 @@
+{
+  "filter": {
+    "f": [
+      [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "France"
+        }
+      ],
+      [
+        {
+          "field": "area",
+          "op": "gte",
+          "value": "10"
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+.md-typeset__table table{
+    table-layout: fixed;
+    word-break: break-word;
+}

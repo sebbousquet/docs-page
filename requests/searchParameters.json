@@ -1,0 +1,25 @@
+{
+  "filter": {
+    "f": [
+      [
+        {
+          "field": "country",
+          "op": "eq",
+          "value": "US"
+        }
+      ],
+      [
+        {
+          "field": "arrival_passengers",
+          "op": "lte",
+          "value": "120000"
+        }
+      ]
+    ]
+  },
+  "page": {
+    "size": 2,
+    "from": 0,
+    "sort": "area"
+  }
+}

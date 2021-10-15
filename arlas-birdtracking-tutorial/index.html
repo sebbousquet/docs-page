@@ -1,0 +1,4127 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Birds tracking - Explore your Geo BigData with ARLAS Exploration</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../css/styles.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#arlas-stack-birdstracking-tutorial" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Explore your Geo BigData with ARLAS Exploration" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Explore your Geo BigData with ARLAS Exploration
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Birds tracking
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Explore your Geo BigData with ARLAS Exploration" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Explore your Geo BigData with ARLAS Exploration
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../introduction-arlas/" title="What is it for?" class="md-nav__link">
+      What is it for?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-quick-start/" title="Quick Start" class="md-nav__link">
+      Quick Start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Birds tracking
+      </label>
+    
+    <a href="./" title="Birds tracking" class="md-nav__link md-nav__link--active">
+      Birds tracking
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-tutorial" class="md-nav__link">
+    About this tutorial
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-will-you-learn" class="md-nav__link">
+    What will you learn ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-will-you-need" class="md-nav__link">
+    What will you need ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-will-you-get" class="md-nav__link">
+    What will you get ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#birdstracking-data" class="md-nav__link">
+    Birdstracking data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-birdstracking-data" class="md-nav__link">
+    Exploring Birdstracking data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-the-collection" class="md-nav__link">
+    Choosing the collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-configuration" class="md-nav__link">
+    Map configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeline-configuration" class="md-nav__link">
+    Timeline configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-bar-configuration" class="md-nav__link">
+    Search bar configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-the-dashbord-and-start-exploring-in-arlas-wui" class="md-nav__link">
+    Save the dashbord and start exploring in ARLAS-wui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#going-further-with-the-map" class="md-nav__link">
+    Going further with the map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geo-big-data" class="md-nav__link">
+    Geo Big Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics-board" class="md-nav__link">
+    Analytics board
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-ais-tutorial/" title="Boats positions" class="md-nav__link">
+      Boats positions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-openaq-tutorial/" title="Air pollution" class="md-nav__link">
+      Air pollution
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      How to guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        How to guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-add-collection/" title="Add and Reference data" class="md-nav__link">
+      Add and Reference data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-wui-configuration/" title="ARLAS-wui" class="md-nav__link">
+      ARLAS-wui
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-server-configuration/" title="ARLAS-server" class="md-nav__link">
+      ARLAS-server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-persistence-configuration/" title="ARLAS-persistence" class="md-nav__link">
+      ARLAS-persistence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-tagger-configuration/" title="ARLAS-tagger" class="md-nav__link">
+      ARLAS-tagger
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Securing ARLAS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Securing ARLAS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-security/" title="Backend" class="md-nav__link">
+      Backend
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-wui-security/" title="Frontend" class="md-nav__link">
+      Frontend
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      ARLAS Exploration for Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        ARLAS Exploration for Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction-developers/" title="How does it work ?" class="md-nav__link">
+      How does it work ?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Backend documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        Backend documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-1" type="checkbox" id="nav-5-2-1">
+    
+    <label class="md-nav__link" for="nav-5-2-1">
+      ARLAS-server APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-1">
+        ARLAS-server APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api-exploration/" title="Exploration" class="md-nav__link">
+      Exploration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api-collection/" title="Collection Managment" class="md-nav__link">
+      Collection Managment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-collection-model/" title="Collection Model" class="md-nav__link">
+      Collection Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-tile-service/" title="Tile Service" class="md-nav__link">
+      Tile Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-ogc/" title="OGC" class="md-nav__link">
+      OGC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-inspire/" title="INSPIRE" class="md-nav__link">
+      INSPIRE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reference/" title="Reference" class="md-nav__link">
+      Reference
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-2" type="checkbox" id="nav-5-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-2">
+      ARLAS-persistence APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-2">
+        ARLAS-persistence APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-persistence-server-overview.md" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api-persistence/" title="Persist" class="md-nav__link">
+      Persist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3" type="checkbox" id="nav-5-2-3">
+    
+    <label class="md-nav__link" for="nav-5-2-3">
+      ARLAS-tagger APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-3">
+        ARLAS-tagger APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-tagger-overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-api-tagging/" title="Tagging" class="md-nav__link">
+      Tagging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tagger_reference/" title="Reference" class="md-nav__link">
+      Reference
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Frontend documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        Frontend documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../build-your-wui/" title="How to build your ARLAS-wui" class="md-nav__link">
+      How to build your ARLAS-wui
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../schemas-doc/schemas/" title="Configuration schemas" class="md-nav__link">
+      Configuration schemas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3" type="checkbox" id="nav-5-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3">
+      Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-3">
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1" type="checkbox" id="nav-5-3-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-1">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-1" type="checkbox" id="nav-5-3-3-1-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_services_collaborativesearch_service_.collaborativesearchservice/" title="Collaborative Search Service" class="md-nav__link">
+      Collaborative Search Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_services_config_service_.configservice/" title="Configuration Service" class="md-nav__link">
+      Configuration Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_models_contributor_.contributor/" title="Contributor" class="md-nav__link">
+      Contributor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-2" type="checkbox" id="nav-5-3-3-1-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_chipssearchcontributor_.chipssearchcontributor/" title="ChipsSearch" class="md-nav__link">
+      ChipsSearch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_computecontributor_.computecontributor/" title="Compute (Metric)" class="md-nav__link">
+      Compute (Metric)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_detailedhistogramcontributor_.detailedhistogramcontributor/" title="DetailedHistogram" class="md-nav__link">
+      DetailedHistogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_histogramcontributor_.histogramcontributor/" title="Histogram" class="md-nav__link">
+      Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_mapcontributor_.mapcontributor/" title="Map" class="md-nav__link">
+      Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_resultlistcontributor_.resultlistcontributor/" title="ResultList" class="md-nav__link">
+      ResultList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_swimlanecontributor_.swimlanecontributor/" title="Swimlane" class="md-nav__link">
+      Swimlane
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_contributors_treecontributor_.treecontributor/" title="Tree" class="md-nav__link">
+      Tree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-3" type="checkbox" id="nav-5-3-3-1-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_donut_donut_component_.donutcomponent/" title="Donut" class="md-nav__link">
+      Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_histogram_histogram_component_.histogramcomponent/" title="Histogram" class="md-nav__link">
+      Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_mapgl_component_.mapglcomponent/" title="Map" class="md-nav__link">
+      Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_import_mapgl_import_component_.mapglimportcomponent/" title="Map data importer" class="md-nav__link">
+      Map data importer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_settings_mapgl_settings_component_.mapglsettingscomponent/" title="Map layers settings" class="md-nav__link">
+      Map layers settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_metric_metric_component_.metriccomponent/" title="Metric" class="md-nav__link">
+      Metric
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_powerbars_powerbars_component_.powerbarscomponent/" title="Powerbars" class="md-nav__link">
+      Powerbars
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_results_result_list_result_list_component_.resultlistcomponent/" title="ResultList" class="md-nav__link">
+      ResultList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_wmts_layer_manager_wmts_layer_manager_component_.wmtslayermanagercomponent/" title="WMTS Manager" class="md-nav__link">
+      WMTS Manager
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4" type="checkbox" id="nav-5-3-3-1-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4">
+      D3 Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-4">
+        D3 Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-1" type="checkbox" id="nav-5-3-3-1-4-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-1">
+      Donuts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-1">
+        Donuts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_abstractdonut_.abstractdonut/" title="Abstract Donut" class="md-nav__link">
+      Abstract Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_multiselectiondonut_.multiselectiondonut/" title="Multi selection Donut" class="md-nav__link">
+      Multi selection Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_oneselectiondonut_.oneselectiondonut/" title="Single selection Donut" class="md-nav__link">
+      Single selection Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_donuts_donutparams_.donutparams/" title="DonutParams" class="md-nav__link">
+      DonutParams
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2" type="checkbox" id="nav-5-3-3-1-4-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2">
+      Histograms
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2">
+        Histograms
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_abstracthistogram_.abstracthistogram/" title="Abstract Histogram" class="md-nav__link">
+      Abstract Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_histogramparams_.histogramparams/" title="HistogramParams" class="md-nav__link">
+      HistogramParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2-3" type="checkbox" id="nav-5-3-3-1-4-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2-3">
+      Charts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2-3">
+        Charts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_abstractchart_.abstractchart/" title="AbstractChart" class="md-nav__link">
+      AbstractChart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_chartarea_.chartarea/" title="Area Chart" class="md-nav__link">
+      Area Chart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_chartbars_.chartbars/" title="Bar Chart" class="md-nav__link">
+      Bar Chart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_charts_chartonedimension_.chartonedimension/" title="One dimension Chart" class="md-nav__link">
+      One dimension Chart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2-4" type="checkbox" id="nav-5-3-3-1-4-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2-4">
+      Swimlanes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2-4">
+        Swimlanes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_swimlanes_abstractswimlane_.abstractswimlane/" title="AbstractSwimlane" class="md-nav__link">
+      AbstractSwimlane
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_swimlanes_swimlanebars_.swimlanebars/" title="Bar Swimlanes" class="md-nav__link">
+      Bar Swimlanes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_histograms_swimlanes_swimlanecircles_.swimlanecircles/" title="Circle Swimlanes" class="md-nav__link">
+      Circle Swimlanes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-5" type="checkbox" id="nav-5-3-3-1-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-5">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-5">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_analytics_board_analytics_board_component_.analyticsboardcomponent/" title="Analytic Board" class="md-nav__link">
+      Analytic Board
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_bookmark_bookmarkdatabase_.bookmarkdatabase.md" title="Bookmark Database" class="md-nav__link">
+      Bookmark Database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_date_picker_date_picker_component_.datepickercomponent/" title="Date Picker" class="md-nav__link">
+      Date Picker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_errormodal_errormodal_component_.errormodalcomponent/" title="Error" class="md-nav__link">
+      Error
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_share_share_component_.sharecomponent/" title="Share" class="md-nav__link">
+      Share
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_tag_tag_component_.tagcomponent/" title="Tag" class="md-nav__link">
+      Tag
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_timeline_timeline_component_.timelinecomponent/" title="Timeline" class="md-nav__link">
+      Timeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_timeline_shortcut_timeline_shortcut_component_.timelineshortcutcomponent/" title="Timeline Shortcut" class="md-nav__link">
+      Timeline Shortcut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_widget_widget_component_.widgetcomponent/" title="Widget" class="md-nav__link">
+      Widget
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2" type="checkbox" id="nav-5-3-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2">
+      Interfaces
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-2">
+        Interfaces
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-1" type="checkbox" id="nav-5-3-3-2-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_collaboration_.collaboration/" title="Collaboration" class="md-nav__link">
+      Collaboration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_collaboration_.collaborationevent/" title="Collaboration Event" class="md-nav__link">
+      Collaboration Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_projections_.geohashaggregation/" title="GeoHash Aggregation" class="md-nav__link">
+      GeoHash Aggregation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_projections_.tiledsearch/" title="Tiled Search" class="md-nav__link">
+      Tiled Search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2" type="checkbox" id="nav-5-3-3-2-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-1" type="checkbox" id="nav-5-3-3-2-2-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-1">
+      Common
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-1">
+        Common
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.elementidentifier/" title="ElementIdentifier" class="md-nav__link">
+      ElementIdentifier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-2" type="checkbox" id="nav-5-3-3-2-2-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-2">
+      Donut
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-2">
+        Donut
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.selectiontree/" title="SelectionTree" class="md-nav__link">
+      SelectionTree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.simplenode/" title="SimpleNode" class="md-nav__link">
+      SimpleNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.treenode/" title="TreeNode" class="md-nav__link">
+      TreeNode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-3" type="checkbox" id="nav-5-3-3-2-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-3">
+      Histogram
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-3">
+        Histogram
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.selectedoutputvalues/" title="SelectedOutputValues" class="md-nav__link">
+      SelectedOutputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.timeshortcut/" title="TimeShortcut" class="md-nav__link">
+      TimeShortcut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.stringifiedtimeshortcut/" title="StringifiedTimeShortcut" class="md-nav__link">
+      StringifiedTimeShortcut
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-4" type="checkbox" id="nav-5-3-3-2-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-4">
+      Map
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-4">
+        Map
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.onmoveresult/" title="OnMoveResult" class="md-nav__link">
+      OnMoveResult
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_contributors_mapcontributor_.style.md" title="Style" class="md-nav__link">
+      Style
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-5" type="checkbox" id="nav-5-3-3-2-2-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-5">
+      ResultList
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-5">
+        ResultList
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.action/" title="Action" class="md-nav__link">
+      Action
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.column/" title="Column" class="md-nav__link">
+      Column
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.detail/" title="Detail" class="md-nav__link">
+      Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_contributors_resultlistcontributor_.detaileddataretriever/" title="DetailedDataRetriever" class="md-nav__link">
+      DetailedDataRetriever
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.field/" title="Field" class="md-nav__link">
+      Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.fielddetail/" title="FieldDetail" class="md-nav__link">
+      FieldDetail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_models_models_.fieldsconfiguration/" title="FieldsConfiguration" class="md-nav__link">
+      FieldsConfiguration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-6" type="checkbox" id="nav-5-3-3-2-2-6">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-6">
+      WMTS Manager
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-6">
+        WMTS Manager
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.dimension/" title="Dimension" class="md-nav__link">
+      Dimension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.gettilesinfo/" title="TilesInfo" class="md-nav__link">
+      TilesInfo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.layerparam/" title="LayerParam" class="md-nav__link">
+      LayerParam
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3" type="checkbox" id="nav-5-3-3-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-1" type="checkbox" id="nav-5-3-3-2-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-1">
+      Common
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-1">
+        Common
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.elementidentifier/" title="ElementIdentifier" class="md-nav__link">
+      ElementIdentifier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-2" type="checkbox" id="nav-5-3-3-2-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-2">
+      Donut
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-2">
+        Donut
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.donutdimensions/" title="DonutDimensions" class="md-nav__link">
+      DonutDimensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.donutnode/" title="DonutNode" class="md-nav__link">
+      DonutNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.donuttooltip/" title="DonutTooltip" class="md-nav__link">
+      DonutTooltip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.treenode/" title="TreeNode" class="md-nav__link">
+      TreeNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_donuts_utils_donututils_.simplenode/" title="SimpleNode" class="md-nav__link">
+      SimpleNode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-3" type="checkbox" id="nav-5-3-3-2-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-3">
+      Histogram
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-3">
+        Histogram
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.chartaxes/" title="ChartAxes" class="md-nav__link">
+      ChartAxes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.chartdimensions/" title="ChartDimensions" class="md-nav__link">
+      ChartDimensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.histogramdata/" title="HistogramData" class="md-nav__link">
+      HistogramData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.marginmodel/" title="MarginModel" class="md-nav__link">
+      MarginModel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.selectedinputvalues/" title="SelectedInputValues" class="md-nav__link">
+      SelectedInputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.selectedoutputvalues/" title="SelectedOutputValues" class="md-nav__link">
+      SelectedOutputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.swimlaneaxes/" title="SwimlaneAxes" class="md-nav__link">
+      SwimlaneAxes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.swimlanedata/" title="SwimlaneData" class="md-nav__link">
+      SwimlaneData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.swimlaneparseddata/" title="SwimlaneParsedData" class="md-nav__link">
+      SwimlaneParsedData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_histograms_utils_histogramutils_.tooltip/" title="Tooltip" class="md-nav__link">
+      Tooltip
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-4" type="checkbox" id="nav-5-3-3-2-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-4">
+      Map
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-4">
+        Map
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.basemapstyle/" title="BasemapStyle" class="md-nav__link">
+      BasemapStyle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.basemapstylegroup.md" title="BasemapStyleGroup" class="md-nav__link">
+      BasemapStyleGroup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.externaleventlayer/" title="ExternalEventLayer" class="md-nav__link">
+      ExternalEventLayer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.layerevents/" title="LayerEvents" class="md-nav__link">
+      LayerEvents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_model_maplayers_.maplayers/" title="MapLayers" class="md-nav__link">
+      MapLayers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_mapgl_model_mapsource_.mapsource/" title="MapSource" class="md-nav__link">
+      MapSource
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_mapgl_component_.onmoveresult/" title="OnMoveResult" class="md-nav__link">
+      OnMoveResult
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-5" type="checkbox" id="nav-5-3-3-2-3-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-5">
+      Map layer Settings
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-5">
+        Map layer Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.geometryselectmodel/" title="GeometrySelectModel" class="md-nav__link">
+      GeometrySelectModel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.geoquery/" title="GeoQuery" class="md-nav__link">
+      GeoQuery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.mapsettingsservice/" title="MapSettingsService" class="md-nav__link">
+      MapSettingsService
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_mapgl_settings_mapgl_settings_component_.operationselectmodel/" title="OperationSelectModel" class="md-nav__link">
+      OperationSelectModel
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-6" type="checkbox" id="nav-5-3-3-2-3-6">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-6">
+      ResultList
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-6">
+        ResultList
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.action/" title="Action" class="md-nav__link">
+      Action
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.additionalinfo/" title="AdditionalInfo" class="md-nav__link">
+      AdditionalInfo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.attachment/" title="Attachment" class="md-nav__link">
+      Attachment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_detailed_data_retriever_.detaileddataretriever/" title="DetailedDataRetriever" class="md-nav__link">
+      DetailedDataRetriever
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.field/" title="Field" class="md-nav__link">
+      Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.fieldsconfiguration/" title="FieldsConfiguration" class="md-nav__link">
+      FieldsConfiguration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_components_results_utils_results_utils_.pagequery/" title="PageQuery" class="md-nav__link">
+      PageQuery
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-4" type="checkbox" id="nav-5-3-3-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_src_app_services_bookmark_model_.bookmark/" title="Bookmark Model" class="md-nav__link">
+      Bookmark Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_models_models_.dateexpression/" title="Date Expression (class)" class="md-nav__link">
+      Date Expression (class)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../interfaces/_src_app_services_startup_startup_service_.extraconfig/" title="Extra Configuration" class="md-nav__link">
+      Extra Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3" type="checkbox" id="nav-5-3-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3">
+      Enums
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-3">
+        Enums
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-1" type="checkbox" id="nav-5-3-3-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_collaboration_.operationenum/" title="Operation" class="md-nav__link">
+      Operation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_projections_.projtype/" title="Projection" class="md-nav__link">
+      Projection
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-2" type="checkbox" id="nav-5-3-3-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_models_.dateunitenum/" title="DateUnitEnum" class="md-nav__link">
+      DateUnitEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_contributors_mapcontributor_.fetchtype.md" title="FetchType" class="md-nav__link">
+      FetchType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_models_.sortenum/" title="SortEnum" class="md-nav__link">
+      SortEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_models_models_.triggertype/" title="TriggerType" class="md-nav__link">
+      TriggerType
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-3" type="checkbox" id="nav-5-3-3-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.charttype/" title="CharType" class="md-nav__link">
+      CharType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.datatype/" title="DataType" class="md-nav__link">
+      DataType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_components_results_utils_enumerations_modeenum_.modeenum/" title="ModeEnum" class="md-nav__link">
+      ModeEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.position/" title="Position" class="md-nav__link">
+      Position
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_components_results_utils_enumerations_sortenum_.sortenum/" title="SortEnum" class="md-nav__link">
+      SortEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_histograms_utils_histogramutils_.swimlanemode/" title="SwimlaneMode" class="md-nav__link">
+      SwimlaneMode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-4" type="checkbox" id="nav-5-3-3-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums/_src_app_services_bookmark_model_.bookmarktype/" title="Bookmark Type" class="md-nav__link">
+      Bookmark Type
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-4" type="checkbox" id="nav-5-3-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-4">
+      Services (Components)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-4">
+        Services (Components)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_services_color_generator_service_.arlascolorservice/" title="Color Generator Service" class="md-nav__link">
+      Color Generator Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_components_componentsutils_.colorgeneratorloader/" title="Color Loader Service" class="md-nav__link">
+      Color Loader Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-5" type="checkbox" id="nav-5-3-3-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-5">
+      Services (Toolkit)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-5">
+        Services (Toolkit)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_aoi_aoi_service_.arlasaoiservice/" title="AOI Service" class="md-nav__link">
+      AOI Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_authentification_authentification_service_.authentificationservice/" title="Authentication Service" class="md-nav__link">
+      Authentication Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_bookmark_bookmark_service_.arlasbookmarkservice/" title="Bookmark Service" class="md-nav__link">
+      Bookmark Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_color_generator_loader_color_generator_loader_service_.arlascolorgeneratorloader/" title="Color Loader Service" class="md-nav__link">
+      Color Loader Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_startup_service_.arlascollaborativesearchservice/" title="Collaborative Search Service" class="md-nav__link">
+      Collaborative Search Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_startup_service_.arlasconfigservice/" title="Configuration Service" class="md-nav__link">
+      Configuration Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_contributorbuilder_.contributorbuilder/" title="Contributor Builder" class="md-nav__link">
+      Contributor Builder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_components_timeline_date_picker_arlastranslateintl_.arlastranslateintl/" title="DatePicker Translate Service" class="md-nav__link">
+      DatePicker Translate Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_export_csv_export_csv_service_.arlasexportcsvservice/" title="Export as CSV Service" class="md-nav__link">
+      Export as CSV Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_extend_extend_service_.arlasextendservice/" title="Extent Service" class="md-nav__link">
+      Extent Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_map_settings_map_settings_service_.arlasmapsettings/" title="Map layers settings Service" class="md-nav__link">
+      Map layers settings Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../classes/_src_app_services_startup_startup_service_.arlasstartupservice/" title="Startup Service" class="md-nav__link">
+      Startup Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../style-your-components/" title="Styling" class="md-nav__link">
+      Styling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../arlas-compatibility/" title="Compatibility Rules" class="md-nav__link">
+      Compatibility Rules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../versions/" title="Component Versions" class="md-nav__link">
+      Component Versions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BROWSER_COMPATIBILITY/" title="Browsers compatibility" class="md-nav__link">
+      Browsers compatibility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../changelogs/" title="What's new?" class="md-nav__link">
+      What's new?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
+    
+    <label class="md-nav__link" for="nav-5-8">
+      Architectural Decision Records
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-8">
+        Architectural Decision Records
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../adr/ADR-001-Timeline_exploration_multicollection/" title="ADR 001" class="md-nav__link">
+      ADR 001
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../about-arlas/" title="About ARLAS" class="md-nav__link">
+      About ARLAS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq-arlas/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-tutorial" class="md-nav__link">
+    About this tutorial
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-will-you-learn" class="md-nav__link">
+    What will you learn ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-will-you-need" class="md-nav__link">
+    What will you need ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-will-you-get" class="md-nav__link">
+    What will you get ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#birdstracking-data" class="md-nav__link">
+    Birdstracking data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-birdstracking-data" class="md-nav__link">
+    Exploring Birdstracking data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#choosing-the-collection" class="md-nav__link">
+    Choosing the collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#map-configuration" class="md-nav__link">
+    Map configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeline-configuration" class="md-nav__link">
+    Timeline configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-bar-configuration" class="md-nav__link">
+    Search bar configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-the-dashbord-and-start-exploring-in-arlas-wui" class="md-nav__link">
+    Save the dashbord and start exploring in ARLAS-wui
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#going-further-with-the-map" class="md-nav__link">
+    Going further with the map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geo-big-data" class="md-nav__link">
+    Geo Big Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analytics-board" class="md-nav__link">
+    Analytics board
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="arlas-stack-birdstracking-tutorial">ARLAS-stack-birdstracking-tutorial</h1>
+<h2 id="about-this-tutorial">About this tutorial</h2>
+<h3 id="what-will-you-learn">What will you learn ?</h3>
+<p>With this tutorial, you'll be able to:</p>
+<ul>
+<li>start an ARLAS-Exploration stack</li>
+<li>Index some birdtracking data in Elasticsearch</li>
+<li>Reference the indexed birdtracking data in ARLAS</li>
+<li>Create a view of ARLAS-wui (a dashboard) to explore the birdtracking data using ARLAS-wui-hub and ARLAS-wui-builder</li>
+</ul>
+<h3 id="what-will-you-need">What will you need ?</h3>
+<p>You will need :</p>
+<ul>
+<li>docker &amp; docker-compose</li>
+<li>curl</li>
+</ul>
+<h3 id="what-will-you-get">What will you get ?</h3>
+<p align="center">
+    <img src="./images/check_dashboard_3.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+Exploration app created in this tutorial
+</p>
+
+<h2 id="birdstracking-data">Birdstracking data</h2>
+<p>Let's explore some white storks migration data, provided by <strong>the Movebank Data Repository</strong>.</p>
+<p>We built a subset of the dataset provided in <a href="doi:10.5441/001/1.ck04mn78">this package</a> by Movebank.</p>
+<p>The subset is <code>birdstracking_data.csv</code>. It contains around 77 000 birds GPS positions described with 7 columns:</p>
+<ul>
+<li>identifier: An identifier of the emitted position</li>
+<li>name: Name of the moving bird</li>
+<li>location: Coordinates of the emitted position as longitudes/latitudes</li>
+<li>timestamp: Moment when the position is emitted</li>
+<li>speed_ms: Speed of the bird at this postion (m/s)</li>
+<li>height_m: Altitude of the birds at this position (m)</li>
+<li>trail: Linestring between the current position of the bird and the next one</li>
+</ul>
+<p>A line of the csv file looks like:</p>
+<table>
+<thead>
+<tr>
+<th>identifier</th>
+<th>name</th>
+<th>location</th>
+<th>timestamp</th>
+<th>speed_ms</th>
+<th>height_m</th>
+<th>trail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>009829e...</td>
+<td>Redrunner + / DER AU057 (eobs 3339)</td>
+<td>'{"lon":8.7,"lat":50.4}'</td>
+<td>1491922507</td>
+<td>190.65</td>
+<td>0.15</td>
+<td>'{"coordinates":[[8.7,50.4],[8.72,50.41]],"type":"LineString"}'</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exploring-birdstracking-data">Exploring Birdstracking data</h2>
+<p>We will explore this data using ARLAS.</p>
+<p><strong>0. Setup</strong></p>
+<ul>
+<li>Create a repository dedicated to this tutorial</li>
+</ul>
+<div class="codehilite"><pre><span></span>mkdir ARLAS-stack-birdstracking-tutorial
+<span class="nb">cd</span> ARLAS-stack-birdstracking-tutorial
+</pre></div>
+
+
+<ul>
+<li>Download the birdstracking data</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -L -O <span class="s2">&quot;https://github.com/gisaia/ARLAS-stack-birdstracking-tutorial/raw/main/data/birdstracking_data.csv&quot;</span>
+</pre></div>
+
+
+<p>Check that <code>birdstracking_data.csv</code> file is downloaded</p>
+<div class="codehilite"><pre><span></span>ls -l birdstracking_data.csv
+</pre></div>
+
+
+<ul>
+<li>Download the ARLAS-Exploration-stack project and unzip it</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="o">(</span>curl -L -O <span class="s2">&quot;https://github.com/gisaia/ARLAS-Exploration-stack/archive/develop.zip&quot;</span><span class="p">;</span> unzip develop.zip<span class="o">)</span>
+</pre></div>
+
+
+<p>Check that the <code>ARLAS-Exploration-stack-develop</code> stack is downloaded</p>
+<div class="codehilite"><pre><span></span>ls -l ARLAS-Exploration-stack-develop
+</pre></div>
+
+
+<p>Now our tutorial environment is set up.</p>
+<p><strong>1. Starting ARLAS Exploration Stack</strong></p>
+<div class="codehilite"><pre><span></span>./ARLAS-Exploration-stack-develop/start.sh
+</pre></div>
+
+
+<p><strong>2. Indexing birdtracking data in Elasticsearch</strong></p>
+<ul>
+<li>Create <code>birdstracking_index</code> index in Elasticsearch with <code>birdtracking.es_mapping.json</code> mapping file</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl https://raw.githubusercontent.com/gisaia/ARLAS-stack-birdstracking-tutorial/main/configs/birdtracking.es_mapping.json <span class="p">|</span> <span class="se">\</span>
+curl -XPUT http://localhost:9200/birdstracking_index/?pretty <span class="se">\</span>
+    -d @- <span class="se">\</span>
+    -H <span class="s1">&#39;Content-Type: application/json&#39;</span>
+</pre></div>
+
+
+<p>You can check that the index is successfuly created by running the following command</p>
+<div class="codehilite"><pre><span></span>curl -XGET http://localhost:9200/birdstracking_index/_mapping?pretty
+</pre></div>
+
+
+<ul>
+<li>Index data in <code>birdstracking_data.csv</code> in Elasticsearch.  For that, We need Logstash as a data processing pipeline that ingests data in Elasticsearch. So we will download it and untar it:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="o">(</span> wget https://artifacts.elastic.co/downloads/logstash/logstash-7.4.2.tar.gz<span class="p">;</span> tar -xzf logstash-7.4.2.tar.gz <span class="o">)</span>
+</pre></div>
+
+
+<ul>
+<li>Logstash needs a configuration file (<code>birdtracking2es.logstash.conf</code>) that indicates how to transform data from the CSV file and index it in Elasticsearch.</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl <span class="s2">&quot;https://raw.githubusercontent.com/gisaia/ARLAS-stack-birdstracking-tutorial/main/configs/birdtracking2es.logstash.conf&quot;</span> <span class="se">\</span>
+    -o birdtracking2es.logstash.conf
+</pre></div>
+
+
+<ul>
+<li>Now we can index the data:</li>
+</ul>
+<div class="codehilite"><pre><span></span>cat birdstracking_data.csv <span class="p">|</span> <span class="se">\</span>
+    ./logstash-7.4.2/bin/logstash <span class="se">\</span>
+    -f birdtracking2es.logstash.conf
+</pre></div>
+
+
+<ul>
+<li>Check if <strong>77 384</strong> birds positions are indexed:</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl -XGET http://localhost:9200/birdstracking_index/_count?pretty
+</pre></div>
+
+
+<p><strong>3. Declaring <code>birdstracking_index</code> in ARLAS</strong></p>
+<p>ARLAS-server interfaces with data indexed in Elasticsearch via a collection reference.</p>
+<p>The collection references an identifier, a timestamp, and geographical fields which allows ARLAS-server to perform a spatial-temporal data analysis</p>
+<ul>
+<li>Create a Birdstracking collection in ARL  AS</li>
+</ul>
+<div class="codehilite"><pre><span></span>curl <span class="s2">&quot;https://raw.githubusercontent.com/gisaia/ARLAS-stack-birdstracking-tutorial/main/birdstracking_collection.json&quot;</span> <span class="p">|</span> <span class="se">\</span>
+curl -X PUT <span class="se">\</span>
+    --header <span class="s1">&#39;Content-Type: application/json;charset=utf-8&#39;</span> <span class="se">\</span>
+    --header <span class="s1">&#39;Accept: application/json&#39;</span> <span class="se">\</span>
+    <span class="s2">&quot;http://localhost:81/server/collections/birdstracking_collection?pretty=true&quot;</span> <span class="se">\</span>
+    --data @-
+</pre></div>
+
+
+<ul>
+<li>Check that the collection is created using the ARLAS-server <code>collections/{collection}</code></li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">X</span> <span class="k">GET</span> <span class="ss">&quot;http://localhost:81/server/collections/birdstracking_collection?pretty=true&quot;</span>
+</pre></div>
+
+
+<p><strong>4. Create a dashbord to explore <code>birdstracking data</code> with ARLAS</strong></p>
+<p>ARLAS stack is up and running and we have birdstracking data available for exploration. We can now create our first dashboard composed of
+- a map to observe the birds trails, the positions' geographical distribution
+- a timeline presenting the number of birds positions over time
+- a search bar to look for birds by their names for instance
+- some widgets to analyse the data from another axis such as the speed distribution.</p>
+<p>To do so, let's go to ARLAS-wui-hub at http://localhost:81/hub and create a new dashboard named <code>Birdstracking dashboard</code></p>
+<p align="center">
+    <img src="./images/create_dashboard.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 0: Creation of a dashboard in ARLAS-wui-hub
+</p>
+
+<p>After clicking on <strong>Create</strong>, you are automatically redirected to ARLAS-wui-builder to start configuring your dashboard.</p>
+<h3 id="choosing-the-collection">Choosing the collection</h3>
+<p>The first thing we need to do is to tell ARLAS which collection of data we want to use to create our dashboard</p>
+<p align="center">
+    <img src="./images/choose_collection.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 1: Choose collection
+</p>
+
+<p>in our case we choose the <code>birdtracking_collection</code></p>
+<h3 id="map-configuration">Map configuration</h3>
+<p>As a first step, I'll set the map at zoom level 7 and the map's center coordinates at Latitude=44° and Longitude=4°. This way, when loading my dashboard in ARLAS-wui, the map will be positionned over France.</p>
+<p align="center">
+    <img src="./images/global_map.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 2: Map initialisation
+</p>
+
+<p>For now, the map is empty. <strong>The first thing we want to find out is where the birds are passing by?</strong></p>
+<p align="center">
+    <img src="./images/add_layer.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 3: Layers view
+</p>
+
+<p>To do so, let's add a layer named <code>Birds trails</code> to visualise the birds paths.</p>
+<p align="center">
+    <img src="./images/geometric_features.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 4: Adding a <b>Gemetric features</b> layer named 'Birds trails'
+</p>
+
+<p>In the <code>Geometry</code> section (2nd section), choose the <em>trail</em> features geo-field</p>
+<p align="center">
+    <img src="./images/geometric_features_geometry.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 5: Choosing the geometry field to display on the map
+</p>
+
+<p>Now, let's define the layer's style. As a starter, we choose the best representation of our geometries: Birds trails are lines. We also choose a fixed color (blue for instance) and a fixed width of 3 pixels</p>
+<p align="center">
+    <img src="./images/geometric_features_style.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 6: Customising 'Birds trails' style
+</p>
+
+<p>After clicking on <strong>Save</strong>, our first layer is created</p>
+<p align="center">
+    <img src="./images/birds_trail_layer.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 7: New layer 'Birds trail' is created
+</p>
+
+<p>We can go and preview the layer in <code>Preview</code> tab</p>
+<p align="center">
+    <img src="./images/birds_trail_preview.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 8: Preview of 'Birds trail' layer
+</p>
+
+<p>We see now where the birds are passing by thanks to this layer</p>
+<h3 id="timeline-configuration">Timeline configuration</h3>
+<p>Let's find out the time period when these positions were emitted.</p>
+<p>For that, let's define a timeline: a histogram that will represent the number of birds positions over time.</p>
+<p>For the x-Axis we choose the <code>timestamp</code> field and for the y-Axis we choose <code>Hits count</code>: the number of positions in each bucket. We set 50 buckets in this example</p>
+<p align="center">
+    <img src="./images/timeline.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 9: Defining a timeline
+</p>
+
+<p>In the <em>Render</em> tab we can set a title for the timeline, date format and the histogram type. Let's choose bars histogram</p>
+<p align="center">
+    <img src="./images/timeline_render.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 10: Timeline render
+</p>
+
+<h3 id="search-bar-configuration">Search bar configuration</h3>
+<p>To define the search bar we can set
+- the placeholder string;
+- the field used to seach keywords
+- the field used to autocomplete the searched words</p>
+<p align="center">
+    <img src="./images/searchbar.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 11: Defining the search bar
+</p>
+
+<h3 id="save-the-dashbord-and-start-exploring-in-arlas-wui">Save the dashbord and start exploring in ARLAS-wui</h3>
+<p>Now we defined
+- 'Birds trails' layer in the map
+- the timeline
+- the search bar</p>
+<p>Let's save this dashboard by clicking on the 'Disk' icon at the left-bottom of the page.</p>
+<p>If we go back to ARLAS-wui-hub at http://localhost:81/hub, we'll find the <code>Birdstracking dashboard</code> created.</p>
+<p align="center">
+    <img src="./images/dashboard_created.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 12: List of created dashboards
+</p>
+
+<p>We can now <strong>View</strong> it in ARLAS-wui</p>
+<p align="center">
+    <img src="./images/check_dashboard_1.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 13: View of dashboard in ARLAS-wui
+</p>
+
+<h3 id="going-further-with-the-map">Going further with the map</h3>
+<p>We now see the trails on the map but we can't distinguish the birds! Let's change that by setting the paths colors from the birds names.</p>
+<p>Let's go back to the dashboard builder and edit 'Birds trails' layer</p>
+<p align="center">
+    <img src="./images/edit_birds_trail.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 14: Editing a layer
+</p>
+
+<p>In the <code>Style</code> section, we choose <strong>Generated</strong> colors option that will automatically generates a hex color from the chosen field values. For our case, we choose <code>name</code> field</p>
+<p align="center">
+    <img src="./images/generated_color.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 15: Setting the trails colors by birds name
+</p>
+
+<p>After saving the layer, we can preview it again and see that now we have two birds :
+- Niclas (green)
+- Redrunner (blue)</p>
+<p align="center">
+    <img src="./images/generated_color_preview.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 16: Preview generated trails colors by birds names
+</p>
+
+<p>On the other hand, it could be interesting to analyse the birds altitudes during their trajectories: where do they land? do they cross mountains ?</p>
+<p>To answer this question, let's create a dedicated layer!</p>
+<p>Before doing that, we will first create a <strong>Visualisation set</strong>, a space where to organise layers that have to be displayed/hidden together. For instance, the 'Birds trails' layer is put under the 'All layers' visualisation set</p>
+<p align="center">
+    <img src="./images/visualisation_sets.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 17: List of visualisation sets
+</p>
+
+<p>For our altitude layer, let's create a new visualisation set called 'Altitude'</p>
+<p align="center">
+    <img src="./images/add_visualisation.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 18: Adding a new visualisation set
+</p>
+
+<p>Now let's create our new layer that will allow us to analyse the birds positions altitudes.</p>
+<p align="center">
+    <img src="./images/altitude_name.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 19: Adding a new layer for birds positions altitude
+</p>
+
+<p>in the <code>Style</code> section, we interpolate the trails colors with interpolation field values. In our case we interpolate the color with the <code>height_m</code> field.</p>
+<p>We set the <code>height_m</code> values interval between 0 and 1000 meters and we choose a color palette</p>
+<p align="center">
+    <img src="./images/altitude_interpolation.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 20: Interpolating trails colors to positions altitudes
+</p>
+
+<p>After saving this layer we can preview it in the <code>Preview</code> tab and start our analyse!</p>
+<p align="center">
+    <img src="./images/altitude_preview.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 21: Preview of birds trails according to the altitude
+</p>
+
+<h3 id="geo-big-data">Geo Big Data</h3>
+<p>For this tutorial, we only have ~77 000 birds positions to explore. This allowed us to display the birds trails directly on the map.</p>
+<p>But what to do in case we had millions of positions to display ?</p>
+<p>It would be very difficult to display them all as it would be very heavy to request all that data at once and the browser will not be able to render as many features. We will end up loosing the user experience fluidity.</p>
+<p>Most importantly, loading millions of birds positions on the map will not be necessarily understandable: we cannot derive clear and synthesized information from it.</p>
+<p>That's why ARLAS proposes a geo-analytic view: we can aggregate the birds positions to a geographical grid and obtain a geographical distribution !</p>
+<p>Let's create a dedicated layer for birds positions geographical distribution.</p>
+<p align="center">
+    <img src="./images/position_distribution_geometry.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 22: Creating a geographical distribution layer
+</p>
+
+<p>We choose to aggregate <code>location</code> geo-field to a geographical grid and we choose a fine granularity for this grid.</p>
+<p>We will display on the map the grid's cells.</p>
+<p>Let's define the style of these cells in <code>Style</code> section</p>
+<p align="center">
+    <img src="./images/positions_distribution_style.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 23: Styling the geographical distribution layer
+</p>
+
+<p>We interpolate the cells colors to the number of birds positions in each cell. That's why we choose <strong>Hits count</strong> that we normalise and choose a color palette</p>
+<p>After saving this layer, we can again visualise it and explore where the positions are geographically</p>
+<p align="center">
+    <img src="./images/positions_distribution_preview.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 24: Birds positions geographical distribution
+</p>
+
+<h3 id="analytics-board">Analytics board</h3>
+<p>We focused on the geographical and temporal analysis. We can also explore other dimensions of the data.</p>
+<p>Let's see what does the speed distribution of these positions looks like.</p>
+<p>To do so we need to create a histogram. ARLAS proposes to organise all the histograms and other widgets in an analytics board.</p>
+<p>We can split the analytics board into tabs. Let's create a tab called 'Tracking' where will add our Speed distribution histogram</p>
+<p align="center">
+    <img src="./images/analytics_new_tab.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 25: Creating a tab in Analytics board
+</p>
+
+<p>Once the tab is created, we can add in it a group of widgets. Let's name it 'Speed'</p>
+<p align="center" style="float:left">
+    <img src="./images/add_group.png" width="45%">
+    <img src="./images/add_widget.png" width="45%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 26: Creating a group in Analytics board tab
+</p>
+
+<p>Let's now create our histogram</p>
+<p align="center">
+    <img src="./images/choose_widget.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 27: Choosing a histogram for speed distribution
+</p>
+
+<p>We can give a title to the Speed distribution histogram</p>
+<p>For the x-Axis we choose <code>speed_ms</code> field and for the y-Axis we choose <code>Hits count</code>: the number of positions in each bucket. We set 70 buckets in this example</p>
+<p align="center">
+    <img src="./images/add_histogram.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 28: Defining speed distribution histogram
+</p>
+
+<p>When we save the histogram we automatically get a preview of it in the analytics board!</p>
+<p align="center">
+    <img src="./images/preview_widget.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 29: Preview speed distribution histogram
+</p>
+
+<p>We can now save the dashbord again using the 'Disk' icon at the left-bottom of the page and view it ARLAS-wui</p>
+<p align="center">
+    <img src="./images/check_dashboard_3.png" width="100%">
+</p>
+
+<p align="center" style="font-style: italic;">
+figure 30: Exploring Birdstracking dashboard in ARLAS-wui
+</p>
+
+<p>As you can see we created a simple dashboard to start exploring Birdstracking data!</p>
+<p>Check out a more sophisticated dashboard about the birdstracking data that explores 6.8 millions birds positions in our <a href="https://demo.cloud.arlas.io/arlas/wui/?config_id=FqesYftVFgdEhZMqozlw&amp;extend=-37.39598924270254,27.94453100590448,39.18730031282266,57.79628173836096">demo space</a>!</p>
+<p>You can get inspired from our different <a href="https://demo.cloud.arlas.io/">demos</a> to build other map layers and other widgets.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../arlas-quick-start/" title="Quick Start" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Quick Start
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../arlas-ais-tutorial/" title="Boats positions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Boats positions
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

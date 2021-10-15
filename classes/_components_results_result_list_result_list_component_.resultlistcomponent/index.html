@@ -1,0 +1,6494 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>ResultList - Explore your Geo BigData with ARLAS Exploration</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/styles.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#class-resultlistcomponent" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Explore your Geo BigData with ARLAS Exploration" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Explore your Geo BigData with ARLAS Exploration
+            </span>
+            <span class="md-header-nav__topic">
+              
+                ResultList
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Explore your Geo BigData with ARLAS Exploration" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Explore your Geo BigData with ARLAS Exploration
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../introduction-arlas/" title="What is it for?" class="md-nav__link">
+      What is it for?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-quick-start/" title="Quick Start" class="md-nav__link">
+      Quick Start
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-birdtracking-tutorial/" title="Birds tracking" class="md-nav__link">
+      Birds tracking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-ais-tutorial/" title="Boats positions" class="md-nav__link">
+      Boats positions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-openaq-tutorial/" title="Air pollution" class="md-nav__link">
+      Air pollution
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      How to guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        How to guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-add-collection/" title="Add and Reference data" class="md-nav__link">
+      Add and Reference data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-wui-configuration/" title="ARLAS-wui" class="md-nav__link">
+      ARLAS-wui
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-server-configuration/" title="ARLAS-server" class="md-nav__link">
+      ARLAS-server
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-persistence-configuration/" title="ARLAS-persistence" class="md-nav__link">
+      ARLAS-persistence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-tagger-configuration/" title="ARLAS-tagger" class="md-nav__link">
+      ARLAS-tagger
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Securing ARLAS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Securing ARLAS
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-security/" title="Backend" class="md-nav__link">
+      Backend
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-wui-security/" title="Frontend" class="md-nav__link">
+      Frontend
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      ARLAS Exploration for Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        ARLAS Exploration for Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../introduction-developers/" title="How does it work ?" class="md-nav__link">
+      How does it work ?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Backend documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        Backend documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-1" type="checkbox" id="nav-5-2-1">
+    
+    <label class="md-nav__link" for="nav-5-2-1">
+      ARLAS-server APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-1">
+        ARLAS-server APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-api/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-api-exploration/" title="Exploration" class="md-nav__link">
+      Exploration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-api-collection/" title="Collection Managment" class="md-nav__link">
+      Collection Managment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-collection-model/" title="Collection Model" class="md-nav__link">
+      Collection Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-tile-service/" title="Tile Service" class="md-nav__link">
+      Tile Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-ogc/" title="OGC" class="md-nav__link">
+      OGC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-inspire/" title="INSPIRE" class="md-nav__link">
+      INSPIRE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../reference/" title="Reference" class="md-nav__link">
+      Reference
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-2" type="checkbox" id="nav-5-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-2">
+      ARLAS-persistence APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-2">
+        ARLAS-persistence APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-persistence-server-overview.md" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-api-persistence/" title="Persist" class="md-nav__link">
+      Persist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3" type="checkbox" id="nav-5-2-3">
+    
+    <label class="md-nav__link" for="nav-5-2-3">
+      ARLAS-tagger APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-3">
+        ARLAS-tagger APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-tagger-overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-api-tagging/" title="Tagging" class="md-nav__link">
+      Tagging
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tagger_reference/" title="Reference" class="md-nav__link">
+      Reference
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3" checked>
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Frontend documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        Frontend documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../build-your-wui/" title="How to build your ARLAS-wui" class="md-nav__link">
+      How to build your ARLAS-wui
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../schemas-doc/schemas/" title="Configuration schemas" class="md-nav__link">
+      Configuration schemas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3" type="checkbox" id="nav-5-3-3" checked>
+    
+    <label class="md-nav__link" for="nav-5-3-3">
+      Reference
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-3">
+        Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1" type="checkbox" id="nav-5-3-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-5-3-3-1">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-1">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-1" type="checkbox" id="nav-5-3-3-1-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_services_collaborativesearch_service_.collaborativesearchservice/" title="Collaborative Search Service" class="md-nav__link">
+      Collaborative Search Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_services_config_service_.configservice/" title="Configuration Service" class="md-nav__link">
+      Configuration Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_models_contributor_.contributor/" title="Contributor" class="md-nav__link">
+      Contributor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-2" type="checkbox" id="nav-5-3-3-1-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_chipssearchcontributor_.chipssearchcontributor/" title="ChipsSearch" class="md-nav__link">
+      ChipsSearch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_computecontributor_.computecontributor/" title="Compute (Metric)" class="md-nav__link">
+      Compute (Metric)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_detailedhistogramcontributor_.detailedhistogramcontributor/" title="DetailedHistogram" class="md-nav__link">
+      DetailedHistogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_histogramcontributor_.histogramcontributor/" title="Histogram" class="md-nav__link">
+      Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_mapcontributor_.mapcontributor/" title="Map" class="md-nav__link">
+      Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_resultlistcontributor_.resultlistcontributor/" title="ResultList" class="md-nav__link">
+      ResultList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_swimlanecontributor_.swimlanecontributor/" title="Swimlane" class="md-nav__link">
+      Swimlane
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_contributors_treecontributor_.treecontributor/" title="Tree" class="md-nav__link">
+      Tree
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-3" type="checkbox" id="nav-5-3-3-1-3" checked>
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_donut_donut_component_.donutcomponent/" title="Donut" class="md-nav__link">
+      Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_histogram_histogram_component_.histogramcomponent/" title="Histogram" class="md-nav__link">
+      Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_mapgl_mapgl_component_.mapglcomponent/" title="Map" class="md-nav__link">
+      Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_mapgl_import_mapgl_import_component_.mapglimportcomponent/" title="Map data importer" class="md-nav__link">
+      Map data importer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_mapgl_settings_mapgl_settings_component_.mapglsettingscomponent/" title="Map layers settings" class="md-nav__link">
+      Map layers settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_metric_metric_component_.metriccomponent/" title="Metric" class="md-nav__link">
+      Metric
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_powerbars_powerbars_component_.powerbarscomponent/" title="Powerbars" class="md-nav__link">
+      Powerbars
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        ResultList
+      </label>
+    
+    <a href="./" title="ResultList" class="md-nav__link md-nav__link--active">
+      ResultList
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implements" class="md-nav__link">
+    Implements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    Index
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-literals" class="md-nav__link">
+    Object literals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check_all" class="md-nav__link">
+    CHECK_ALL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_inbetween" class="md-nav__link">
+    CHECK_INBETWEEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_actions_height" class="md-nav__link">
+    COLUMN_ACTIONS_HEIGHT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_name_height" class="md-nav__link">
+    COLUMN_NAME_HEIGHT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters_height" class="md-nav__link">
+    FILTERS_HEIGHT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter_on" class="md-nav__link">
+    FILTER_ON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosort_action" class="md-nav__link">
+    GEOSORT_ACTION
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosort_button" class="md-nav__link">
+    GEOSORT_BUTTON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geo_distance" class="md-nav__link">
+    GEO_DISTANCE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global_actions" class="md-nav__link">
+    GLOBAL_ACTIONS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid_mode" class="md-nav__link">
+    GRID_MODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list_mode" class="md-nav__link">
+    LIST_MODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modeenum" class="md-nav__link">
+    ModeEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pageenum" class="md-nav__link">
+    PageEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort_ascending" class="md-nav__link">
+    SORT_ASCENDING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort_descending" class="md-nav__link">
+    SORT_DESCENDING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortenum" class="md-nav__link">
+    SortEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actiononitemevent" class="md-nav__link">
+    actionOnItemEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allitemschecked" class="md-nav__link">
+    allItemsChecked
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderstyle" class="md-nav__link">
+    borderStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellbackgroundstyle" class="md-nav__link">
+    cellBackgroundStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changeresultmode" class="md-nav__link">
+    changeResultMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clickontile" class="md-nav__link">
+    clickOnTile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorssaturationweight" class="md-nav__link">
+    colorsSaturationWeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columnfilterchanged" class="md-nav__link">
+    columnFilterChanged
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consulteditemevent" class="md-nav__link">
+    consultedItemEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currentsortedcolumn" class="md-nav__link">
+    currentSortedColumn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defautmode" class="md-nav__link">
+    defautMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detaileddataretriever" class="md-nav__link">
+    detailedDataRetriever
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailedgridheight" class="md-nav__link">
+    detailedGridHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displayfilters" class="md-nav__link">
+    displayFilters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaylistgrid" class="md-nav__link">
+    displayListGrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaythead" class="md-nav__link">
+    displayThead
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdownmapvalues" class="md-nav__link">
+    dropDownMapValues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldsconfiguration" class="md-nav__link">
+    fieldsConfiguration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldslist" class="md-nav__link">
+    fieldsList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtersmap" class="md-nav__link">
+    filtersMap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geoautosortevent" class="md-nav__link">
+    geoAutoSortEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosortevent" class="md-nav__link">
+    geoSortEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalactionevent" class="md-nav__link">
+    globalActionEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalactionslist" class="md-nav__link">
+    globalActionsList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasgridmode" class="md-nav__link">
+    hasGridMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlightitems" class="md-nav__link">
+    highlightItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indeterminateditems" class="md-nav__link">
+    indeterminatedItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbodyhidden" class="md-nav__link">
+    isBodyHidden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdetailledgridopen" class="md-nav__link">
+    isDetailledGridOpen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isgeosortactivated" class="md-nav__link">
+    isGeoSortActivated
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isgeosortenabled" class="md-nav__link">
+    isGeoSortEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isnextpagerequested" class="md-nav__link">
+    isNextPageRequested
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispreviouspagerequested" class="md-nav__link">
+    isPreviousPageRequested
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isshiftdown" class="md-nav__link">
+    isShiftDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    items
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keystocolors" class="md-nav__link">
+    keysToColors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastsortedcolumn" class="md-nav__link">
+    lastSortedColumn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moredataevent" class="md-nav__link">
+    moreDataEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nlastlines" class="md-nav__link">
+    nLastLines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nbgridcolumns" class="md-nav__link">
+    nbGridColumns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nblinesbeforefetch" class="md-nav__link">
+    nbLinesBeforeFetch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paginationevent" class="md-nav__link">
+    paginationEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultmode" class="md-nav__link">
+    resultMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rowitemlist" class="md-nav__link">
+    rowItemList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectedgriditem" class="md-nav__link">
+    selectedGridItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecteditems" class="md-nav__link">
+    selectedItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecteditemsevent" class="md-nav__link">
+    selectedItemsEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setfiltersevent" class="md-nav__link">
+    setFiltersEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showemptygroup" class="md-nav__link">
+    showEmptyGroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortcolumnevent" class="md-nav__link">
+    sortColumnEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tablewidth" class="md-nav__link">
+    tableWidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbodyheight" class="md-nav__link">
+    tbodyHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theadheight" class="md-nav__link">
+    theadHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translate" class="md-nav__link">
+    translate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecolorservice" class="md-nav__link">
+    useColorService
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#byfieldname" class="md-nav__link">
+    byFieldName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearselection" class="md-nav__link">
+    clearSelection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closedetail" class="md-nav__link">
+    closeDetail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columnchanged" class="md-nav__link">
+    columnChanged
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosort" class="md-nav__link">
+    geoSort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngdocheck" class="md-nav__link">
+    ngDoCheck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngonchanges" class="md-nav__link">
+    ngOnChanges
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngoninit" class="md-nav__link">
+    ngOnInit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onenteritem" class="md-nav__link">
+    onEnterItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onleaveitem" class="md-nav__link">
+    onLeaveItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paginate" class="md-nav__link">
+    paginate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectallitems" class="md-nav__link">
+    selectAllItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectinbetween" class="md-nav__link">
+    selectInBetween
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setborderstyle" class="md-nav__link">
+    setBorderStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setconsulteditem" class="md-nav__link">
+    setConsultedItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setdirection" class="md-nav__link">
+    setDirection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setfilters" class="md-nav__link">
+    setFilters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setgeosortaction" class="md-nav__link">
+    setGeoSortAction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setglobalaction" class="md-nav__link">
+    setGlobalAction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setitemactions" class="md-nav__link">
+    setItemActions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setselectedgriditem" class="md-nav__link">
+    setSelectedGridItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setselecteditems" class="md-nav__link">
+    setSelectedItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsortedcolumn" class="md-nav__link">
+    setSortedColumn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shiftdown" class="md-nav__link">
+    shiftDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shiftup" class="md-nav__link">
+    shiftUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    sort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triggeractiononitem" class="md-nav__link">
+    triggerActionOnItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whichmode" class="md-nav__link">
+    whichMode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-literals_1" class="md-nav__link">
+    Object literals
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fetchstate" class="md-nav__link">
+    fetchState
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endlistdown" class="md-nav__link">
+    endListDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endlistup" class="md-nav__link">
+    endListUp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadanimationconfig" class="md-nav__link">
+    loadAnimationConfig
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animationtype" class="md-nav__link">
+    animationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backdropbackgroundcolour" class="md-nav__link">
+    backdropBackgroundColour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backdropborderradius" class="md-nav__link">
+    backdropBorderRadius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primarycolour" class="md-nav__link">
+    primaryColour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondarycolour" class="md-nav__link">
+    secondaryColour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tertiarycolour" class="md-nav__link">
+    tertiaryColour
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrolloptions" class="md-nav__link">
+    scrollOptions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maintainscrolldownposition" class="md-nav__link">
+    maintainScrollDownPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintainscrollupposition" class="md-nav__link">
+    maintainScrollUpPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nblines" class="md-nav__link">
+    nbLines
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedcolumn" class="md-nav__link">
+    sortedColumn
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fieldname" class="md-nav__link">
+    fieldName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortdirection" class="md-nav__link">
+    sortDirection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_wmts_layer_manager_wmts_layer_manager_component_.wmtslayermanagercomponent/" title="WMTS Manager" class="md-nav__link">
+      WMTS Manager
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4" type="checkbox" id="nav-5-3-3-1-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4">
+      D3 Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-4">
+        D3 Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-1" type="checkbox" id="nav-5-3-3-1-4-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-1">
+      Donuts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-1">
+        Donuts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_donuts_abstractdonut_.abstractdonut/" title="Abstract Donut" class="md-nav__link">
+      Abstract Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_donuts_multiselectiondonut_.multiselectiondonut/" title="Multi selection Donut" class="md-nav__link">
+      Multi selection Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_donuts_oneselectiondonut_.oneselectiondonut/" title="Single selection Donut" class="md-nav__link">
+      Single selection Donut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_donuts_donutparams_.donutparams/" title="DonutParams" class="md-nav__link">
+      DonutParams
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2" type="checkbox" id="nav-5-3-3-1-4-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2">
+      Histograms
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2">
+        Histograms
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_abstracthistogram_.abstracthistogram/" title="Abstract Histogram" class="md-nav__link">
+      Abstract Histogram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_histogramparams_.histogramparams/" title="HistogramParams" class="md-nav__link">
+      HistogramParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2-3" type="checkbox" id="nav-5-3-3-1-4-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2-3">
+      Charts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2-3">
+        Charts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_charts_abstractchart_.abstractchart/" title="AbstractChart" class="md-nav__link">
+      AbstractChart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_charts_chartarea_.chartarea/" title="Area Chart" class="md-nav__link">
+      Area Chart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_charts_chartbars_.chartbars/" title="Bar Chart" class="md-nav__link">
+      Bar Chart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_charts_chartonedimension_.chartonedimension/" title="One dimension Chart" class="md-nav__link">
+      One dimension Chart
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-4-2-4" type="checkbox" id="nav-5-3-3-1-4-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-4-2-4">
+      Swimlanes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+      <label class="md-nav__title" for="nav-5-3-3-1-4-2-4">
+        Swimlanes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_swimlanes_abstractswimlane_.abstractswimlane/" title="AbstractSwimlane" class="md-nav__link">
+      AbstractSwimlane
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_swimlanes_swimlanebars_.swimlanebars/" title="Bar Swimlanes" class="md-nav__link">
+      Bar Swimlanes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_histograms_swimlanes_swimlanecircles_.swimlanecircles/" title="Circle Swimlanes" class="md-nav__link">
+      Circle Swimlanes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-1-5" type="checkbox" id="nav-5-3-3-1-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-1-5">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-1-5">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_analytics_board_analytics_board_component_.analyticsboardcomponent/" title="Analytic Board" class="md-nav__link">
+      Analytic Board
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_bookmark_bookmarkdatabase_.bookmarkdatabase.md" title="Bookmark Database" class="md-nav__link">
+      Bookmark Database
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_timeline_date_picker_date_picker_component_.datepickercomponent/" title="Date Picker" class="md-nav__link">
+      Date Picker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_errormodal_errormodal_component_.errormodalcomponent/" title="Error" class="md-nav__link">
+      Error
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_share_share_component_.sharecomponent/" title="Share" class="md-nav__link">
+      Share
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_tag_tag_component_.tagcomponent/" title="Tag" class="md-nav__link">
+      Tag
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_timeline_timeline_timeline_component_.timelinecomponent/" title="Timeline" class="md-nav__link">
+      Timeline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_timeline_timeline_shortcut_timeline_shortcut_component_.timelineshortcutcomponent/" title="Timeline Shortcut" class="md-nav__link">
+      Timeline Shortcut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_widget_widget_component_.widgetcomponent/" title="Widget" class="md-nav__link">
+      Widget
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2" type="checkbox" id="nav-5-3-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2">
+      Interfaces
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-2">
+        Interfaces
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-1" type="checkbox" id="nav-5-3-3-2-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_collaboration_.collaboration/" title="Collaboration" class="md-nav__link">
+      Collaboration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_collaboration_.collaborationevent/" title="Collaboration Event" class="md-nav__link">
+      Collaboration Event
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_projections_.geohashaggregation/" title="GeoHash Aggregation" class="md-nav__link">
+      GeoHash Aggregation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_projections_.tiledsearch/" title="Tiled Search" class="md-nav__link">
+      Tiled Search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2" type="checkbox" id="nav-5-3-3-2-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-1" type="checkbox" id="nav-5-3-3-2-2-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-1">
+      Common
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-1">
+        Common
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.elementidentifier/" title="ElementIdentifier" class="md-nav__link">
+      ElementIdentifier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-2" type="checkbox" id="nav-5-3-3-2-2-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-2">
+      Donut
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-2">
+        Donut
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.selectiontree/" title="SelectionTree" class="md-nav__link">
+      SelectionTree
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.simplenode/" title="SimpleNode" class="md-nav__link">
+      SimpleNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.treenode/" title="TreeNode" class="md-nav__link">
+      TreeNode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-3" type="checkbox" id="nav-5-3-3-2-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-3">
+      Histogram
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-3">
+        Histogram
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.selectedoutputvalues/" title="SelectedOutputValues" class="md-nav__link">
+      SelectedOutputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.timeshortcut/" title="TimeShortcut" class="md-nav__link">
+      TimeShortcut
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.stringifiedtimeshortcut/" title="StringifiedTimeShortcut" class="md-nav__link">
+      StringifiedTimeShortcut
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-4" type="checkbox" id="nav-5-3-3-2-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-4">
+      Map
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-4">
+        Map
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.onmoveresult/" title="OnMoveResult" class="md-nav__link">
+      OnMoveResult
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_contributors_mapcontributor_.style.md" title="Style" class="md-nav__link">
+      Style
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-5" type="checkbox" id="nav-5-3-3-2-2-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-5">
+      ResultList
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-5">
+        ResultList
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.action/" title="Action" class="md-nav__link">
+      Action
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.column/" title="Column" class="md-nav__link">
+      Column
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.detail/" title="Detail" class="md-nav__link">
+      Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_contributors_resultlistcontributor_.detaileddataretriever/" title="DetailedDataRetriever" class="md-nav__link">
+      DetailedDataRetriever
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.field/" title="Field" class="md-nav__link">
+      Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.fielddetail/" title="FieldDetail" class="md-nav__link">
+      FieldDetail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_models_models_.fieldsconfiguration/" title="FieldsConfiguration" class="md-nav__link">
+      FieldsConfiguration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-2-6" type="checkbox" id="nav-5-3-3-2-2-6">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-2-6">
+      WMTS Manager
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-2-6">
+        WMTS Manager
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.dimension/" title="Dimension" class="md-nav__link">
+      Dimension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.gettilesinfo/" title="TilesInfo" class="md-nav__link">
+      TilesInfo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_wmts_layer_manager_wmts_layer_manager_component_.layerparam/" title="LayerParam" class="md-nav__link">
+      LayerParam
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3" type="checkbox" id="nav-5-3-3-2-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-1" type="checkbox" id="nav-5-3-3-2-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-1">
+      Common
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-1">
+        Common
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_results_utils_.elementidentifier/" title="ElementIdentifier" class="md-nav__link">
+      ElementIdentifier
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-2" type="checkbox" id="nav-5-3-3-2-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-2">
+      Donut
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-2">
+        Donut
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_donuts_utils_donututils_.donutdimensions/" title="DonutDimensions" class="md-nav__link">
+      DonutDimensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_donuts_utils_donututils_.donutnode/" title="DonutNode" class="md-nav__link">
+      DonutNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_donuts_utils_donututils_.donuttooltip/" title="DonutTooltip" class="md-nav__link">
+      DonutTooltip
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_donuts_utils_donututils_.treenode/" title="TreeNode" class="md-nav__link">
+      TreeNode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_donuts_utils_donututils_.simplenode/" title="SimpleNode" class="md-nav__link">
+      SimpleNode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-3" type="checkbox" id="nav-5-3-3-2-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-3">
+      Histogram
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-3">
+        Histogram
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.chartaxes/" title="ChartAxes" class="md-nav__link">
+      ChartAxes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.chartdimensions/" title="ChartDimensions" class="md-nav__link">
+      ChartDimensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.histogramdata/" title="HistogramData" class="md-nav__link">
+      HistogramData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.marginmodel/" title="MarginModel" class="md-nav__link">
+      MarginModel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.selectedinputvalues/" title="SelectedInputValues" class="md-nav__link">
+      SelectedInputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.selectedoutputvalues/" title="SelectedOutputValues" class="md-nav__link">
+      SelectedOutputValues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.swimlaneaxes/" title="SwimlaneAxes" class="md-nav__link">
+      SwimlaneAxes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.swimlanedata/" title="SwimlaneData" class="md-nav__link">
+      SwimlaneData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.swimlaneparseddata/" title="SwimlaneParsedData" class="md-nav__link">
+      SwimlaneParsedData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_histograms_utils_histogramutils_.tooltip/" title="Tooltip" class="md-nav__link">
+      Tooltip
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-4" type="checkbox" id="nav-5-3-3-2-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-4">
+      Map
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-4">
+        Map
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_model_maplayers_.basemapstyle/" title="BasemapStyle" class="md-nav__link">
+      BasemapStyle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_model_maplayers_.basemapstylegroup.md" title="BasemapStyleGroup" class="md-nav__link">
+      BasemapStyleGroup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_model_maplayers_.externaleventlayer/" title="ExternalEventLayer" class="md-nav__link">
+      ExternalEventLayer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_model_maplayers_.layerevents/" title="LayerEvents" class="md-nav__link">
+      LayerEvents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_model_maplayers_.maplayers/" title="MapLayers" class="md-nav__link">
+      MapLayers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_mapgl_model_mapsource_.mapsource/" title="MapSource" class="md-nav__link">
+      MapSource
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_mapgl_component_.onmoveresult/" title="OnMoveResult" class="md-nav__link">
+      OnMoveResult
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-5" type="checkbox" id="nav-5-3-3-2-3-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-5">
+      Map layer Settings
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-5">
+        Map layer Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_settings_mapgl_settings_component_.geometryselectmodel/" title="GeometrySelectModel" class="md-nav__link">
+      GeometrySelectModel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_settings_mapgl_settings_component_.geoquery/" title="GeoQuery" class="md-nav__link">
+      GeoQuery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_settings_mapgl_settings_component_.mapsettingsservice/" title="MapSettingsService" class="md-nav__link">
+      MapSettingsService
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_mapgl_settings_mapgl_settings_component_.operationselectmodel/" title="OperationSelectModel" class="md-nav__link">
+      OperationSelectModel
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-3-6" type="checkbox" id="nav-5-3-3-2-3-6">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-3-6">
+      ResultList
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+      <label class="md-nav__title" for="nav-5-3-3-2-3-6">
+        ResultList
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_results_utils_.action/" title="Action" class="md-nav__link">
+      Action
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_results_utils_.additionalinfo/" title="AdditionalInfo" class="md-nav__link">
+      AdditionalInfo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_results_utils_.attachment/" title="Attachment" class="md-nav__link">
+      Attachment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_detailed_data_retriever_.detaileddataretriever/" title="DetailedDataRetriever" class="md-nav__link">
+      DetailedDataRetriever
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_results_utils_.field/" title="Field" class="md-nav__link">
+      Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_results_utils_.fieldsconfiguration/" title="FieldsConfiguration" class="md-nav__link">
+      FieldsConfiguration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_components_results_utils_results_utils_.pagequery/" title="PageQuery" class="md-nav__link">
+      PageQuery
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-2-4" type="checkbox" id="nav-5-3-3-2-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-2-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-2-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_src_app_services_bookmark_model_.bookmark/" title="Bookmark Model" class="md-nav__link">
+      Bookmark Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_models_models_.dateexpression/" title="Date Expression (class)" class="md-nav__link">
+      Date Expression (class)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../interfaces/_src_app_services_startup_startup_service_.extraconfig/" title="Extra Configuration" class="md-nav__link">
+      Extra Configuration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3" type="checkbox" id="nav-5-3-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3">
+      Enums
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-3">
+        Enums
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-1" type="checkbox" id="nav-5-3-3-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-1">
+      Core
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-1">
+        Core
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_models_collaboration_.operationenum/" title="Operation" class="md-nav__link">
+      Operation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_models_projections_.projtype/" title="Projection" class="md-nav__link">
+      Projection
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-2" type="checkbox" id="nav-5-3-3-3-2">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-2">
+      Contributors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-2">
+        Contributors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_models_models_.dateunitenum/" title="DateUnitEnum" class="md-nav__link">
+      DateUnitEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_contributors_mapcontributor_.fetchtype.md" title="FetchType" class="md-nav__link">
+      FetchType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_models_models_.sortenum/" title="SortEnum" class="md-nav__link">
+      SortEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_models_models_.triggertype/" title="TriggerType" class="md-nav__link">
+      TriggerType
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-3" type="checkbox" id="nav-5-3-3-3-3">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_histograms_utils_histogramutils_.charttype/" title="CharType" class="md-nav__link">
+      CharType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_histograms_utils_histogramutils_.datatype/" title="DataType" class="md-nav__link">
+      DataType
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_components_results_utils_enumerations_modeenum_.modeenum/" title="ModeEnum" class="md-nav__link">
+      ModeEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_histograms_utils_histogramutils_.position/" title="Position" class="md-nav__link">
+      Position
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_components_results_utils_enumerations_sortenum_.sortenum/" title="SortEnum" class="md-nav__link">
+      SortEnum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_histograms_utils_histogramutils_.swimlanemode/" title="SwimlaneMode" class="md-nav__link">
+      SwimlaneMode
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-3-4" type="checkbox" id="nav-5-3-3-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-3-4">
+      Toolkit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+      <label class="md-nav__title" for="nav-5-3-3-3-4">
+        Toolkit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../enums/_src_app_services_bookmark_model_.bookmarktype/" title="Bookmark Type" class="md-nav__link">
+      Bookmark Type
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-4" type="checkbox" id="nav-5-3-3-4">
+    
+    <label class="md-nav__link" for="nav-5-3-3-4">
+      Services (Components)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-4">
+        Services (Components)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_services_color_generator_service_.arlascolorservice/" title="Color Generator Service" class="md-nav__link">
+      Color Generator Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_components_componentsutils_.colorgeneratorloader/" title="Color Loader Service" class="md-nav__link">
+      Color Loader Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-3-5" type="checkbox" id="nav-5-3-3-5">
+    
+    <label class="md-nav__link" for="nav-5-3-3-5">
+      Services (Toolkit)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-3-3-5">
+        Services (Toolkit)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_aoi_aoi_service_.arlasaoiservice/" title="AOI Service" class="md-nav__link">
+      AOI Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_authentification_authentification_service_.authentificationservice/" title="Authentication Service" class="md-nav__link">
+      Authentication Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_bookmark_bookmark_service_.arlasbookmarkservice/" title="Bookmark Service" class="md-nav__link">
+      Bookmark Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_color_generator_loader_color_generator_loader_service_.arlascolorgeneratorloader/" title="Color Loader Service" class="md-nav__link">
+      Color Loader Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_startup_startup_service_.arlascollaborativesearchservice/" title="Collaborative Search Service" class="md-nav__link">
+      Collaborative Search Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_startup_startup_service_.arlasconfigservice/" title="Configuration Service" class="md-nav__link">
+      Configuration Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_startup_contributorbuilder_.contributorbuilder/" title="Contributor Builder" class="md-nav__link">
+      Contributor Builder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_components_timeline_date_picker_arlastranslateintl_.arlastranslateintl/" title="DatePicker Translate Service" class="md-nav__link">
+      DatePicker Translate Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_export_csv_export_csv_service_.arlasexportcsvservice/" title="Export as CSV Service" class="md-nav__link">
+      Export as CSV Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_extend_extend_service_.arlasextendservice/" title="Extent Service" class="md-nav__link">
+      Extent Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_map_settings_map_settings_service_.arlasmapsettings/" title="Map layers settings Service" class="md-nav__link">
+      Map layers settings Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../_src_app_services_startup_startup_service_.arlasstartupservice/" title="Startup Service" class="md-nav__link">
+      Startup Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../style-your-components/" title="Styling" class="md-nav__link">
+      Styling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../arlas-compatibility/" title="Compatibility Rules" class="md-nav__link">
+      Compatibility Rules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../versions/" title="Component Versions" class="md-nav__link">
+      Component Versions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../BROWSER_COMPATIBILITY/" title="Browsers compatibility" class="md-nav__link">
+      Browsers compatibility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../changelogs/" title="What's new?" class="md-nav__link">
+      What's new?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
+    
+    <label class="md-nav__link" for="nav-5-8">
+      Architectural Decision Records
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-8">
+        Architectural Decision Records
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../adr/ADR-001-Timeline_exploration_multicollection/" title="ADR 001" class="md-nav__link">
+      ADR 001
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about-arlas/" title="About ARLAS" class="md-nav__link">
+      About ARLAS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../faq-arlas/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hierarchy" class="md-nav__link">
+    Hierarchy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implements" class="md-nav__link">
+    Implements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    Index
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-literals" class="md-nav__link">
+    Object literals
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors_1" class="md-nav__link">
+    Constructors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    constructor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties_1" class="md-nav__link">
+    Properties
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check_all" class="md-nav__link">
+    CHECK_ALL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check_inbetween" class="md-nav__link">
+    CHECK_INBETWEEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_actions_height" class="md-nav__link">
+    COLUMN_ACTIONS_HEIGHT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column_name_height" class="md-nav__link">
+    COLUMN_NAME_HEIGHT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters_height" class="md-nav__link">
+    FILTERS_HEIGHT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter_on" class="md-nav__link">
+    FILTER_ON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosort_action" class="md-nav__link">
+    GEOSORT_ACTION
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosort_button" class="md-nav__link">
+    GEOSORT_BUTTON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geo_distance" class="md-nav__link">
+    GEO_DISTANCE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global_actions" class="md-nav__link">
+    GLOBAL_ACTIONS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid_mode" class="md-nav__link">
+    GRID_MODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list_mode" class="md-nav__link">
+    LIST_MODE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modeenum" class="md-nav__link">
+    ModeEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pageenum" class="md-nav__link">
+    PageEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort_ascending" class="md-nav__link">
+    SORT_ASCENDING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort_descending" class="md-nav__link">
+    SORT_DESCENDING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortenum" class="md-nav__link">
+    SortEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actiononitemevent" class="md-nav__link">
+    actionOnItemEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allitemschecked" class="md-nav__link">
+    allItemsChecked
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borderstyle" class="md-nav__link">
+    borderStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cellbackgroundstyle" class="md-nav__link">
+    cellBackgroundStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changeresultmode" class="md-nav__link">
+    changeResultMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clickontile" class="md-nav__link">
+    clickOnTile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorssaturationweight" class="md-nav__link">
+    colorsSaturationWeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columnfilterchanged" class="md-nav__link">
+    columnFilterChanged
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columns" class="md-nav__link">
+    columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consulteditemevent" class="md-nav__link">
+    consultedItemEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currentsortedcolumn" class="md-nav__link">
+    currentSortedColumn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defautmode" class="md-nav__link">
+    defautMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detaileddataretriever" class="md-nav__link">
+    detailedDataRetriever
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailedgridheight" class="md-nav__link">
+    detailedGridHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displayfilters" class="md-nav__link">
+    displayFilters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaylistgrid" class="md-nav__link">
+    displayListGrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#displaythead" class="md-nav__link">
+    displayThead
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdownmapvalues" class="md-nav__link">
+    dropDownMapValues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldsconfiguration" class="md-nav__link">
+    fieldsConfiguration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fieldslist" class="md-nav__link">
+    fieldsList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtersmap" class="md-nav__link">
+    filtersMap
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geoautosortevent" class="md-nav__link">
+    geoAutoSortEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosortevent" class="md-nav__link">
+    geoSortEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalactionevent" class="md-nav__link">
+    globalActionEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#globalactionslist" class="md-nav__link">
+    globalActionsList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasgridmode" class="md-nav__link">
+    hasGridMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlightitems" class="md-nav__link">
+    highlightItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indeterminateditems" class="md-nav__link">
+    indeterminatedItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isbodyhidden" class="md-nav__link">
+    isBodyHidden
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isdetailledgridopen" class="md-nav__link">
+    isDetailledGridOpen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isgeosortactivated" class="md-nav__link">
+    isGeoSortActivated
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isgeosortenabled" class="md-nav__link">
+    isGeoSortEnabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isnextpagerequested" class="md-nav__link">
+    isNextPageRequested
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispreviouspagerequested" class="md-nav__link">
+    isPreviousPageRequested
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isshiftdown" class="md-nav__link">
+    isShiftDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    items
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keystocolors" class="md-nav__link">
+    keysToColors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lastsortedcolumn" class="md-nav__link">
+    lastSortedColumn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moredataevent" class="md-nav__link">
+    moreDataEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nlastlines" class="md-nav__link">
+    nLastLines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nbgridcolumns" class="md-nav__link">
+    nbGridColumns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nblinesbeforefetch" class="md-nav__link">
+    nbLinesBeforeFetch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paginationevent" class="md-nav__link">
+    paginationEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultmode" class="md-nav__link">
+    resultMode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rowitemlist" class="md-nav__link">
+    rowItemList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectedgriditem" class="md-nav__link">
+    selectedGridItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecteditems" class="md-nav__link">
+    selectedItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecteditemsevent" class="md-nav__link">
+    selectedItemsEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setfiltersevent" class="md-nav__link">
+    setFiltersEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showemptygroup" class="md-nav__link">
+    showEmptyGroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortcolumnevent" class="md-nav__link">
+    sortColumnEvent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tablewidth" class="md-nav__link">
+    tableWidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbodyheight" class="md-nav__link">
+    tbodyHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theadheight" class="md-nav__link">
+    theadHeight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translate" class="md-nav__link">
+    translate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usecolorservice" class="md-nav__link">
+    useColorService
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods_1" class="md-nav__link">
+    Methods
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#byfieldname" class="md-nav__link">
+    byFieldName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearselection" class="md-nav__link">
+    clearSelection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closedetail" class="md-nav__link">
+    closeDetail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columnchanged" class="md-nav__link">
+    columnChanged
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geosort" class="md-nav__link">
+    geoSort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngdocheck" class="md-nav__link">
+    ngDoCheck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngonchanges" class="md-nav__link">
+    ngOnChanges
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngoninit" class="md-nav__link">
+    ngOnInit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onenteritem" class="md-nav__link">
+    onEnterItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onleaveitem" class="md-nav__link">
+    onLeaveItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paginate" class="md-nav__link">
+    paginate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectallitems" class="md-nav__link">
+    selectAllItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selectinbetween" class="md-nav__link">
+    selectInBetween
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setborderstyle" class="md-nav__link">
+    setBorderStyle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setconsulteditem" class="md-nav__link">
+    setConsultedItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setdirection" class="md-nav__link">
+    setDirection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setfilters" class="md-nav__link">
+    setFilters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setgeosortaction" class="md-nav__link">
+    setGeoSortAction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setglobalaction" class="md-nav__link">
+    setGlobalAction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setitemactions" class="md-nav__link">
+    setItemActions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setselectedgriditem" class="md-nav__link">
+    setSelectedGridItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setselecteditems" class="md-nav__link">
+    setSelectedItems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsortedcolumn" class="md-nav__link">
+    setSortedColumn
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shiftdown" class="md-nav__link">
+    shiftDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shiftup" class="md-nav__link">
+    shiftUp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" class="md-nav__link">
+    sort
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triggeractiononitem" class="md-nav__link">
+    triggerActionOnItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whichmode" class="md-nav__link">
+    whichMode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object-literals_1" class="md-nav__link">
+    Object literals
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fetchstate" class="md-nav__link">
+    fetchState
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endlistdown" class="md-nav__link">
+    endListDown
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endlistup" class="md-nav__link">
+    endListUp
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadanimationconfig" class="md-nav__link">
+    loadAnimationConfig
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animationtype" class="md-nav__link">
+    animationType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backdropbackgroundcolour" class="md-nav__link">
+    backdropBackgroundColour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backdropborderradius" class="md-nav__link">
+    backdropBorderRadius
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primarycolour" class="md-nav__link">
+    primaryColour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secondarycolour" class="md-nav__link">
+    secondaryColour
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tertiarycolour" class="md-nav__link">
+    tertiaryColour
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scrolloptions" class="md-nav__link">
+    scrollOptions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maintainscrolldownposition" class="md-nav__link">
+    maintainScrollDownPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintainscrollupposition" class="md-nav__link">
+    maintainScrollUpPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nblines" class="md-nav__link">
+    nbLines
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedcolumn" class="md-nav__link">
+    sortedColumn
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fieldname" class="md-nav__link">
+    fieldName
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortdirection" class="md-nav__link">
+    sortDirection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <p><a href="../README.md">arlas-web-components</a> &gt; <a href="../../modules/_components_results_result_list_result_list_component_/">"components/results/result-list/result-list.component"</a> &gt; <a href="./">ResultListComponent</a></p>
+<h1 id="class-resultlistcomponent">Class: ResultListComponent</h1>
+<h2 id="hierarchy">Hierarchy</h2>
+<p><strong>ResultListComponent</strong></p>
+<h2 id="implements">Implements</h2>
+<ul>
+<li><code>OnInit</code></li>
+<li><code>DoCheck</code></li>
+<li><code>OnChanges</code></li>
+</ul>
+<h2 id="index">Index</h2>
+<h3 id="constructors">Constructors</h3>
+<ul>
+<li><a href="./#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties</h3>
+<ul>
+<li><a href="./#check_all">CHECK_ALL</a></li>
+<li><a href="./#check_inbetween">CHECK_INBETWEEN</a></li>
+<li><a href="./#column_actions_height">COLUMN_ACTIONS_HEIGHT</a></li>
+<li><a href="./#column_name_height">COLUMN_NAME_HEIGHT</a></li>
+<li><a href="./#filters_height">FILTERS_HEIGHT</a></li>
+<li><a href="./#filter_on">FILTER_ON</a></li>
+<li><a href="./#geosort_action">GEOSORT_ACTION</a></li>
+<li><a href="./#geosort_button">GEOSORT_BUTTON</a></li>
+<li><a href="./#geo_distance">GEO_DISTANCE</a></li>
+<li><a href="./#global_actions">GLOBAL_ACTIONS</a></li>
+<li><a href="./#grid_mode">GRID_MODE</a></li>
+<li><a href="./#list_mode">LIST_MODE</a></li>
+<li><a href="./#modeenum">ModeEnum</a></li>
+<li><a href="./#pageenum">PageEnum</a></li>
+<li><a href="./#sort_ascending">SORT_ASCENDING</a></li>
+<li><a href="./#sort_descending">SORT_DESCENDING</a></li>
+<li><a href="./#sortenum">SortEnum</a></li>
+<li><a href="./#actiononitemevent">actionOnItemEvent</a></li>
+<li><a href="./#allitemschecked">allItemsChecked</a></li>
+<li><a href="./#borderstyle">borderStyle</a></li>
+<li><a href="./#cellbackgroundstyle">cellBackgroundStyle</a></li>
+<li><a href="./#changeresultmode">changeResultMode</a></li>
+<li><a href="./#clickontile">clickOnTile</a></li>
+<li><a href="./#colorssaturationweight">colorsSaturationWeight</a></li>
+<li><a href="./#columnfilterchanged">columnFilterChanged</a></li>
+<li><a href="./#columns">columns</a></li>
+<li><a href="./#consulteditemevent">consultedItemEvent</a></li>
+<li><a href="./#currentsortedcolumn">currentSortedColumn</a></li>
+<li><a href="./#defautmode">defautMode</a></li>
+<li><a href="./#detaileddataretriever">detailedDataRetriever</a></li>
+<li><a href="./#detailedgridheight">detailedGridHeight</a></li>
+<li><a href="./#displayfilters">displayFilters</a></li>
+<li><a href="./#displaylistgrid">displayListGrid</a></li>
+<li><a href="./#displaythead">displayThead</a></li>
+<li><a href="./#dropdownmapvalues">dropDownMapValues</a></li>
+<li><a href="./#fieldsconfiguration">fieldsConfiguration</a></li>
+<li><a href="./#fieldslist">fieldsList</a></li>
+<li><a href="./#filtersmap">filtersMap</a></li>
+<li><a href="./#geoautosortevent">geoAutoSortEvent</a></li>
+<li><a href="./#geosortevent">geoSortEvent</a></li>
+<li><a href="./#globalactionevent">globalActionEvent</a></li>
+<li><a href="./#globalactionslist">globalActionsList</a></li>
+<li><a href="./#hasgridmode">hasGridMode</a></li>
+<li><a href="./#highlightitems">highlightItems</a></li>
+<li><a href="./#indeterminateditems">indeterminatedItems</a></li>
+<li><a href="./#isbodyhidden">isBodyHidden</a></li>
+<li><a href="./#isdetailledgridopen">isDetailledGridOpen</a></li>
+<li><a href="./#isgeosortactivated">isGeoSortActivated</a></li>
+<li><a href="./#isgeosortenabled">isGeoSortEnabled</a></li>
+<li><a href="./#isnextpagerequested">isNextPageRequested</a></li>
+<li><a href="./#ispreviouspagerequested">isPreviousPageRequested</a></li>
+<li><a href="./#isshiftdown">isShiftDown</a></li>
+<li><a href="./#items">items</a></li>
+<li><a href="./#keystocolors">keysToColors</a></li>
+<li><a href="./#lastsortedcolumn">lastSortedColumn</a></li>
+<li><a href="./#moredataevent">moreDataEvent</a></li>
+<li><a href="./#nlastlines">nLastLines</a></li>
+<li><a href="./#nbgridcolumns">nbGridColumns</a></li>
+<li><a href="./#nblinesbeforefetch">nbLinesBeforeFetch</a></li>
+<li><a href="./#options">options</a></li>
+<li><a href="./#paginationevent">paginationEvent</a></li>
+<li><a href="./#resultmode">resultMode</a></li>
+<li><a href="./#rowitemlist">rowItemList</a></li>
+<li><a href="./#selectedgriditem">selectedGridItem</a></li>
+<li><a href="./#selecteditems">selectedItems</a></li>
+<li><a href="./#selecteditemsevent">selectedItemsEvent</a></li>
+<li><a href="./#setfiltersevent">setFiltersEvent</a></li>
+<li><a href="./#showemptygroup">showEmptyGroup</a></li>
+<li><a href="./#sortcolumnevent">sortColumnEvent</a></li>
+<li><a href="./#tablewidth">tableWidth</a></li>
+<li><a href="./#tbodyheight">tbodyHeight</a></li>
+<li><a href="./#theadheight">theadHeight</a></li>
+<li><a href="./#translate">translate</a></li>
+<li><a href="./#usecolorservice">useColorService</a></li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><a href="./#byfieldname">byFieldName</a></li>
+<li><a href="./#clearselection">clearSelection</a></li>
+<li><a href="./#closedetail">closeDetail</a></li>
+<li><a href="./#columnchanged">columnChanged</a></li>
+<li><a href="./#geosort">geoSort</a></li>
+<li><a href="./#ngdocheck">ngDoCheck</a></li>
+<li><a href="./#ngonchanges">ngOnChanges</a></li>
+<li><a href="./#ngoninit">ngOnInit</a></li>
+<li><a href="./#onenteritem">onEnterItem</a></li>
+<li><a href="./#onleaveitem">onLeaveItem</a></li>
+<li><a href="./#paginate">paginate</a></li>
+<li><a href="./#selectallitems">selectAllItems</a></li>
+<li><a href="./#selectinbetween">selectInBetween</a></li>
+<li><a href="./#setborderstyle">setBorderStyle</a></li>
+<li><a href="./#setconsulteditem">setConsultedItem</a></li>
+<li><a href="./#setdirection">setDirection</a></li>
+<li><a href="./#setfilters">setFilters</a></li>
+<li><a href="./#setgeosortaction">setGeoSortAction</a></li>
+<li><a href="./#setglobalaction">setGlobalAction</a></li>
+<li><a href="./#setitemactions">setItemActions</a></li>
+<li><a href="./#setselectedgriditem">setSelectedGridItem</a></li>
+<li><a href="./#setselecteditems">setSelectedItems</a></li>
+<li><a href="./#setsortedcolumn">setSortedColumn</a></li>
+<li><a href="./#shiftdown">shiftDown</a></li>
+<li><a href="./#shiftup">shiftUp</a></li>
+<li><a href="./#sort">sort</a></li>
+<li><a href="./#triggeractiononitem">triggerActionOnItem</a></li>
+<li><a href="./#whichmode">whichMode</a></li>
+</ul>
+<h3 id="object-literals">Object literals</h3>
+<ul>
+<li><a href="./#fetchstate">fetchState</a></li>
+<li><a href="./#loadanimationconfig">loadAnimationConfig</a></li>
+<li><a href="./#scrolloptions">scrollOptions</a></li>
+<li><a href="./#sortedcolumn">sortedColumn</a></li>
+</ul>
+<hr />
+<h2 id="constructors_1">Constructors</h2>
+<p><a id="constructor"></a></p>
+<h3 id="constructor">constructor</h3>
+<p>⊕ <strong>new ResultListComponent</strong>(iterableRowsDiffer: <em><code>IterableDiffers</code></em>, iterableColumnsDiffer: <em><code>IterableDiffers</code></em>, el: <em><code>ElementRef</code></em>, colorService: <em><a href="../_services_color_generator_service_.arlascolorservice/">ArlasColorService</a></em>, translate: <em><code>TranslateService</code></em>): <a href="./">ResultListComponent</a></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:415</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iterableRowsDiffer</td>
+<td><code>IterableDiffers</code></td>
+</tr>
+<tr>
+<td>iterableColumnsDiffer</td>
+<td><code>IterableDiffers</code></td>
+</tr>
+<tr>
+<td>el</td>
+<td><code>ElementRef</code></td>
+</tr>
+<tr>
+<td>colorService</td>
+<td><a href="../_services_color_generator_service_.arlascolorservice/">ArlasColorService</a></td>
+</tr>
+<tr>
+<td>translate</td>
+<td><code>TranslateService</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <a href="./">ResultListComponent</a></p>
+<hr />
+<h2 id="properties_1">Properties</h2>
+<p><a id="check_all"></a></p>
+<h3 id="check_all">CHECK_ALL</h3>
+<p><strong>● CHECK_ALL</strong>: <em><code>string</code></em> = "Check all visible items"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:75</em></p>
+<hr />
+<p><a id="check_inbetween"></a></p>
+<h3 id="check_inbetween">CHECK_INBETWEEN</h3>
+<p><strong>● CHECK_INBETWEEN</strong>: <em><code>string</code></em> = "Check in between"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:71</em></p>
+<hr />
+<p><a id="column_actions_height"></a></p>
+<h3 id="column_actions_height">COLUMN_ACTIONS_HEIGHT</h3>
+<p><strong>● COLUMN_ACTIONS_HEIGHT</strong>: <em><code>number</code></em> = 55</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:97</em></p>
+<hr />
+<p><a id="column_name_height"></a></p>
+<h3 id="column_name_height">COLUMN_NAME_HEIGHT</h3>
+<p><strong>● COLUMN_NAME_HEIGHT</strong>: <em><code>number</code></em> = 10</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:99</em></p>
+<hr />
+<p><a id="filters_height"></a></p>
+<h3 id="filters_height">FILTERS_HEIGHT</h3>
+<p><strong>● FILTERS_HEIGHT</strong>: <em><code>number</code></em> = 50</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:102</em></p>
+<hr />
+<p><a id="filter_on"></a></p>
+<h3 id="filter_on">FILTER_ON</h3>
+<p><strong>● FILTER_ON</strong>: <em><code>string</code></em> = "Filter on"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:67</em></p>
+<hr />
+<p><a id="geosort_action"></a></p>
+<h3 id="geosort_action">GEOSORT_ACTION</h3>
+<p><strong>● GEOSORT_ACTION</strong>: <em><code>string</code></em> = "Geo sort action"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:83</em></p>
+<hr />
+<p><a id="geosort_button"></a></p>
+<h3 id="geosort_button">GEOSORT_BUTTON</h3>
+<p><strong>● GEOSORT_BUTTON</strong>: <em><code>string</code></em> = "Geo-sort"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:95</em></p>
+<hr />
+<p><a id="geo_distance"></a></p>
+<h3 id="geo_distance">GEO_DISTANCE</h3>
+<p><strong>● GEO_DISTANCE</strong>: <em><code>string</code></em> = "geodistance"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:54</em></p>
+<hr />
+<p><a id="global_actions"></a></p>
+<h3 id="global_actions">GLOBAL_ACTIONS</h3>
+<p><strong>● GLOBAL_ACTIONS</strong>: <em><code>string</code></em> = "Global actions"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:79</em></p>
+<hr />
+<p><a id="grid_mode"></a></p>
+<h3 id="grid_mode">GRID_MODE</h3>
+<p><strong>● GRID_MODE</strong>: <em><code>string</code></em> = "Grid mode"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:87</em></p>
+<hr />
+<p><a id="list_mode"></a></p>
+<h3 id="list_mode">LIST_MODE</h3>
+<p><strong>● LIST_MODE</strong>: <em><code>string</code></em> = "List mode"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:91</em></p>
+<hr />
+<p><a id="modeenum"></a></p>
+<h3 id="modeenum">ModeEnum</h3>
+<p><strong>● ModeEnum</strong>: <em><a href="../../enums/_components_results_utils_enumerations_modeenum_.modeenum/">ModeEnum</a></em> =  ModeEnum</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:395</em></p>
+<hr />
+<p><a id="pageenum"></a></p>
+<h3 id="pageenum">PageEnum</h3>
+<p><strong>● PageEnum</strong>: <em><a href="../../enums/_components_results_utils_enumerations_pageenum_.pageenum/">PageEnum</a></em> =  PageEnum</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:396</em></p>
+<hr />
+<p><a id="sort_ascending"></a></p>
+<h3 id="sort_ascending">SORT_ASCENDING</h3>
+<p><strong>● SORT_ASCENDING</strong>: <em><code>string</code></em> = "click for ascending sort"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:63</em></p>
+<hr />
+<p><a id="sort_descending"></a></p>
+<h3 id="sort_descending">SORT_DESCENDING</h3>
+<p><strong>● SORT_DESCENDING</strong>: <em><code>string</code></em> = "click for descending sort"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:59</em></p>
+<hr />
+<p><a id="sortenum"></a></p>
+<h3 id="sortenum">SortEnum</h3>
+<p><strong>● SortEnum</strong>: <em><a href="../../enums/_components_results_utils_enumerations_sortenum_.sortenum/">SortEnum</a></em> =  SortEnum</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:397</em></p>
+<hr />
+<p><a id="actiononitemevent"></a></p>
+<h3 id="actiononitemevent">actionOnItemEvent</h3>
+<p><strong>● actionOnItemEvent</strong>: <em><code>Subject</code>&lt;<code>object</code>&gt;</em> = 
+    new Subject&lt;{ action: Action, elementidentifier: ElementIdentifier }&gt;()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:356</em></p>
+<hr />
+<p><a id="allitemschecked"></a></p>
+<h3 id="allitemschecked">allItemsChecked</h3>
+<p><strong>● allItemsChecked</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:406</em></p>
+<hr />
+<p><a id="borderstyle"></a></p>
+<h3 id="borderstyle">borderStyle</h3>
+<p><strong>● borderStyle</strong>: <em><code>string</code></em> = "solid"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:410</em></p>
+<hr />
+<p><a id="cellbackgroundstyle"></a></p>
+<h3 id="cellbackgroundstyle">cellBackgroundStyle</h3>
+<p><strong>● cellBackgroundStyle</strong>: <em><a href="../../enums/_components_results_utils_enumerations_cellbackgroundstyleenum_.cellbackgroundstyleenum/">CellBackgroundStyleEnum</a></em> =  CellBackgroundStyleEnum.filled</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:282</em></p>
+<hr />
+<p><a id="changeresultmode"></a></p>
+<h3 id="changeresultmode">changeResultMode</h3>
+<p><strong>● changeResultMode</strong>: <em><code>Subject</code>&lt;<a href="../../enums/_components_results_utils_enumerations_modeenum_.modeenum/">ModeEnum</a>&gt;</em> =  new Subject<ModeEnum>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:381</em></p>
+<hr />
+<p><a id="clickontile"></a></p>
+<h3 id="clickontile">clickOnTile</h3>
+<p><strong>● clickOnTile</strong>: <em><code>Subject</code>&lt;<a href="../_components_results_model_item_.item/">Item</a>&gt;</em> =  new Subject<Item>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:375</em></p>
+<hr />
+<p><a id="colorssaturationweight"></a></p>
+<h3 id="colorssaturationweight">colorsSaturationWeight</h3>
+<p><strong>● colorsSaturationWeight</strong>: <em><code>number</code></em> =  1 / 2</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:270</em></p>
+<hr />
+<p><a id="columnfilterchanged"></a></p>
+<h3 id="columnfilterchanged">columnFilterChanged</h3>
+<p><strong>● columnFilterChanged</strong>: <em><code>Subject</code>&lt;<a href="../_components_results_model_column_.column/">Column</a>&gt;</em> =  new Subject<Column>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:369</em></p>
+<hr />
+<p><a id="columns"></a></p>
+<h3 id="columns">columns</h3>
+<p><strong>● columns</strong>: <em><code>Array</code>&lt;<a href="../_components_results_model_column_.column/">Column</a>&gt;</em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:384</em></p>
+<hr />
+<p><a id="consulteditemevent"></a></p>
+<h3 id="consulteditemevent">consultedItemEvent</h3>
+<p><strong>● consultedItemEvent</strong>: <em><code>Subject</code>&lt;<a href="../../interfaces/_components_results_utils_results_utils_.elementidentifier/">ElementIdentifier</a>&gt;</em> =  new Subject<ElementIdentifier>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:329</em></p>
+<hr />
+<p><a id="currentsortedcolumn"></a></p>
+<h3 id="currentsortedcolumn">currentSortedColumn</h3>
+<p><strong>● currentSortedColumn</strong>: <em><a href="../_components_results_model_column_.column/">Column</a></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:237</em></p>
+<hr />
+<p><a id="defautmode"></a></p>
+<h3 id="defautmode">defautMode</h3>
+<p><strong>● defautMode</strong>: <em><a href="../../enums/_components_results_utils_enumerations_modeenum_.modeenum/">ModeEnum</a></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:218</em></p>
+<hr />
+<p><a id="detaileddataretriever"></a></p>
+<h3 id="detaileddataretriever">detailedDataRetriever</h3>
+<p><strong>● detailedDataRetriever</strong>: <em><a href="../../interfaces/_components_results_utils_detailed_data_retriever_.detaileddataretriever/">DetailedDataRetriever</a></em> =  null</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:194</em></p>
+<hr />
+<p><a id="detailedgridheight"></a></p>
+<h3 id="detailedgridheight">detailedGridHeight</h3>
+<p><strong>● detailedGridHeight</strong>: <em><code>number</code></em> = 250</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:175</em></p>
+<hr />
+<p><a id="displayfilters"></a></p>
+<h3 id="displayfilters">displayFilters</h3>
+<p><strong>● displayFilters</strong>: <em><code>boolean</code></em> = true</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:229</em></p>
+<hr />
+<p><a id="displaylistgrid"></a></p>
+<h3 id="displaylistgrid">displayListGrid</h3>
+<p><strong>● displayListGrid</strong>: <em><code>string</code></em> = "inline"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:411</em></p>
+<hr />
+<p><a id="displaythead"></a></p>
+<h3 id="displaythead">displayThead</h3>
+<p><strong>● displayThead</strong>: <em><code>boolean</code></em> = true</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:256</em></p>
+<hr />
+<p><a id="dropdownmapvalues"></a></p>
+<h3 id="dropdownmapvalues">dropDownMapValues</h3>
+<p><strong>● dropDownMapValues</strong>: <em><code>Map</code>&lt;<code>string</code>, <code>Observable</code>&lt;<code>Array</code>&lt;<code>string</code>&gt;&gt;&gt;</em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:251</em></p>
+<hr />
+<p><a id="fieldsconfiguration"></a></p>
+<h3 id="fieldsconfiguration">fieldsConfiguration</h3>
+<p><strong>● fieldsConfiguration</strong>: <em><a href="../../interfaces/_components_results_utils_results_utils_.fieldsconfiguration/">FieldsConfiguration</a></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:146</em></p>
+<hr />
+<p><a id="fieldslist"></a></p>
+<h3 id="fieldslist">fieldsList</h3>
+<p><strong>● fieldsList</strong>: <em><code>Array</code>&lt;<code>object</code>&gt;</em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:127</em></p>
+<hr />
+<p><a id="filtersmap"></a></p>
+<h3 id="filtersmap">filtersMap</h3>
+<p><strong>● filtersMap</strong>: <em><code>Map</code>&lt;<code>string</code>, <code>string</code> | <code>number</code> | <code>Date</code>&gt;</em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:244</em></p>
+<hr />
+<p><a id="geoautosortevent"></a></p>
+<h3 id="geoautosortevent">geoAutoSortEvent</h3>
+<p><strong>● geoAutoSortEvent</strong>: <em><code>Subject</code>&lt;<code>boolean</code>&gt;</em> =  new Subject<boolean>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:316</em></p>
+<hr />
+<p><a id="geosortevent"></a></p>
+<h3 id="geosortevent">geoSortEvent</h3>
+<p><strong>● geoSortEvent</strong>: <em><code>Subject</code>&lt;<code>string</code>&gt;</em> =  new Subject<string>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:310</em></p>
+<hr />
+<p><a id="globalactionevent"></a></p>
+<h3 id="globalactionevent">globalActionEvent</h3>
+<p><strong>● globalActionEvent</strong>: <em><code>Subject</code>&lt;<a href="../../interfaces/_components_results_utils_results_utils_.action/">Action</a>&gt;</em> =  new Subject<Action>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:363</em></p>
+<hr />
+<p><a id="globalactionslist"></a></p>
+<h3 id="globalactionslist">globalActionsList</h3>
+<p><strong>● globalActionsList</strong>: <em><a href="../../interfaces/_components_results_utils_results_utils_.action/">Action</a>[]</em> =  new Array<Action>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:187</em></p>
+<hr />
+<p><a id="hasgridmode"></a></p>
+<h3 id="hasgridmode">hasGridMode</h3>
+<p><strong>● hasGridMode</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:404</em></p>
+<hr />
+<p><a id="highlightitems"></a></p>
+<h3 id="highlightitems">highlightItems</h3>
+<p><strong>● highlightItems</strong>: <em><code>Set</code>&lt;<code>string</code>&gt;</em> =  new Set<string>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:212</em></p>
+<hr />
+<p><a id="indeterminateditems"></a></p>
+<h3 id="indeterminateditems">indeterminatedItems</h3>
+<p><strong>● indeterminatedItems</strong>: <em><code>Set</code>&lt;<code>string</code>&gt;</em> =  new Set<string>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:200</em></p>
+<hr />
+<p><a id="isbodyhidden"></a></p>
+<h3 id="isbodyhidden">isBodyHidden</h3>
+<p><strong>● isBodyHidden</strong>: <em><code>boolean</code></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:224</em></p>
+<hr />
+<p><a id="isdetailledgridopen"></a></p>
+<h3 id="isdetailledgridopen">isDetailledGridOpen</h3>
+<p><strong>● isDetailledGridOpen</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:297</em></p>
+<hr />
+<p><a id="isgeosortactivated"></a></p>
+<h3 id="isgeosortactivated">isGeoSortActivated</h3>
+<p><strong>● isGeoSortActivated</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:389</em></p>
+<hr />
+<p><a id="isgeosortenabled"></a></p>
+<h3 id="isgeosortenabled">isGeoSortEnabled</h3>
+<p><strong>● isGeoSortEnabled</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:235</em></p>
+<hr />
+<p><a id="isnextpagerequested"></a></p>
+<h3 id="isnextpagerequested">isNextPageRequested</h3>
+<p><strong>● isNextPageRequested</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:402</em></p>
+<hr />
+<p><a id="ispreviouspagerequested"></a></p>
+<h3 id="ispreviouspagerequested">isPreviousPageRequested</h3>
+<p><strong>● isPreviousPageRequested</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:403</em></p>
+<hr />
+<p><a id="isshiftdown"></a></p>
+<h3 id="isshiftdown">isShiftDown</h3>
+<p><strong>● isShiftDown</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:412</em></p>
+<hr />
+<p><a id="items"></a></p>
+<h3 id="items">items</h3>
+<p><strong>● items</strong>: <em><code>Array</code>&lt;<a href="../_components_results_model_item_.item/">Item</a>&gt;</em> =  new Array<Item>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:385</em></p>
+<hr />
+<p><a id="keystocolors"></a></p>
+<h3 id="keystocolors">keysToColors</h3>
+<p><strong>● keysToColors</strong>: <em><code>Array</code>&lt;[<code>string</code>, <code>string</code>]&gt;</em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:262</em></p>
+<hr />
+<p><a id="lastsortedcolumn"></a></p>
+<h3 id="lastsortedcolumn">lastSortedColumn</h3>
+<p><strong>● lastSortedColumn</strong>: <em><a href="../_components_results_model_column_.column/">Column</a></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:387</em></p>
+<hr />
+<p><a id="moredataevent"></a></p>
+<h3 id="moredataevent">moreDataEvent</h3>
+<p><strong>● moreDataEvent</strong>: <em><code>Subject</code>&lt;<code>number</code>&gt;</em> =  new Subject<number>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:342</em></p>
+<hr />
+<p><a id="nlastlines"></a></p>
+<h3 id="nlastlines">nLastLines</h3>
+<p><strong>● nLastLines</strong>: <em><code>number</code></em> = 5</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:161</em></p>
+<hr />
+<p><a id="nbgridcolumns"></a></p>
+<h3 id="nbgridcolumns">nbGridColumns</h3>
+<p><strong>● nbGridColumns</strong>: <em><code>number</code></em> = 4</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:181</em></p>
+<hr />
+<p><a id="nblinesbeforefetch"></a></p>
+<h3 id="nblinesbeforefetch">nbLinesBeforeFetch</h3>
+<p><strong>● nbLinesBeforeFetch</strong>: <em><code>any</code></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:169</em></p>
+<hr />
+<p><a id="options"></a></p>
+<h3 id="options">options</h3>
+<p><strong>● options</strong>: <em><a href="../_components_results_utils_results_utils_.resultlistoptions/">ResultListOptions</a></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:115</em></p>
+<hr />
+<p><a id="paginationevent"></a></p>
+<h3 id="paginationevent">paginationEvent</h3>
+<p><strong>● paginationEvent</strong>: <em><code>Subject</code>&lt;<a href="../../interfaces/_components_results_utils_results_utils_.pagequery/">PageQuery</a>&gt;</em> =  new Subject<PageQuery>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:350</em></p>
+<hr />
+<p><a id="resultmode"></a></p>
+<h3 id="resultmode">resultMode</h3>
+<p><strong>● resultMode</strong>: <em><a href="../../enums/_components_results_utils_enumerations_modeenum_.modeenum/">ModeEnum</a></em> =  this.defautMode</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:405</em></p>
+<hr />
+<p><a id="rowitemlist"></a></p>
+<h3 id="rowitemlist">rowItemList</h3>
+<p><strong>● rowItemList</strong>: <em><code>Array</code>&lt;<code>Map</code>&lt;<code>string</code>, <code>string</code> | <code>number</code> | <code>Date</code>&gt;&gt;</em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:139</em></p>
+<hr />
+<p><a id="selectedgriditem"></a></p>
+<h3 id="selectedgriditem">selectedGridItem</h3>
+<p><strong>● selectedGridItem</strong>: <em><a href="../_components_results_model_item_.item/">Item</a></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:287</em></p>
+<hr />
+<p><a id="selecteditems"></a></p>
+<h3 id="selecteditems">selectedItems</h3>
+<p><strong>● selectedItems</strong>: <em><code>Set</code>&lt;<code>string</code>&gt;</em> =  new Set<string>()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:206</em></p>
+<hr />
+<p><a id="selecteditemsevent"></a></p>
+<h3 id="selecteditemsevent">selectedItemsEvent</h3>
+<p><strong>● selectedItemsEvent</strong>: <em><code>Subject</code>&lt;<code>Array</code>&lt;<code>string</code>&gt;&gt;</em> =  new Subject<Array<string>&gt;()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:322</em></p>
+<hr />
+<p><a id="setfiltersevent"></a></p>
+<h3 id="setfiltersevent">setFiltersEvent</h3>
+<p><strong>● setFiltersEvent</strong>: <em><code>Subject</code>&lt;<code>Map</code>&lt;<code>string</code>, <code>string</code> | <code>number</code> | <code>Date</code>&gt;&gt;</em> =  new Subject<Map<string, string | number | Date>&gt;()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:335</em></p>
+<hr />
+<p><a id="showemptygroup"></a></p>
+<h3 id="showemptygroup">showEmptyGroup</h3>
+<p><strong>● showEmptyGroup</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:292</em></p>
+<hr />
+<p><a id="sortcolumnevent"></a></p>
+<h3 id="sortcolumnevent">sortColumnEvent</h3>
+<p><strong>● sortColumnEvent</strong>: <em><code>Subject</code>&lt;<code>object</code>&gt;</em> = 
+    new Subject&lt;{ fieldName: string, sortDirection: SortEnum }&gt;()</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:303</em></p>
+<hr />
+<p><a id="tablewidth"></a></p>
+<h3 id="tablewidth">tableWidth</h3>
+<p><strong>● tableWidth</strong>: <em><code>number</code></em> =  null</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:153</em></p>
+<hr />
+<p><a id="tbodyheight"></a></p>
+<h3 id="tbodyheight">tbodyHeight</h3>
+<p><strong>● tbodyHeight</strong>: <em><code>number</code></em> =  null</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:392</em></p>
+<hr />
+<p><a id="theadheight"></a></p>
+<h3 id="theadheight">theadHeight</h3>
+<p><strong>● theadHeight</strong>: <em><code>number</code></em> =  null</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:393</em></p>
+<hr />
+<p><a id="translate"></a></p>
+<h3 id="translate">translate</h3>
+<p><strong>● translate</strong>: <em><code>TranslateService</code></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:419</em></p>
+<hr />
+<p><a id="usecolorservice"></a></p>
+<h3 id="usecolorservice">useColorService</h3>
+<p><strong>● useColorService</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:276</em></p>
+<hr />
+<h2 id="methods_1">Methods</h2>
+<p><a id="byfieldname"></a></p>
+<h3 id="byfieldname">byFieldName</h3>
+<p>▸ <strong>byFieldName</strong>(item1: <em><a href="../_components_results_model_column_.column/">Column</a></em>, item2: <em><a href="../_components_results_model_column_.column/">Column</a></em>): <code>boolean</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:845</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item1</td>
+<td><a href="../_components_results_model_column_.column/">Column</a></td>
+</tr>
+<tr>
+<td>item2</td>
+<td><a href="../_components_results_model_column_.column/">Column</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>boolean</code></p>
+<hr />
+<p><a id="clearselection"></a></p>
+<h3 id="clearselection">clearSelection</h3>
+<p>▸ <strong>clearSelection</strong>(): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:816</em></p>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="closedetail"></a></p>
+<h3 id="closedetail">closeDetail</h3>
+<p>▸ <strong>closeDetail</strong>(isClosed: <em><code>boolean</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:736</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isClosed</td>
+<td><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="columnchanged"></a></p>
+<h3 id="columnchanged">columnChanged</h3>
+<p>▸ <strong>columnChanged</strong>(colum: <em><a href="../_components_results_model_column_.column/">Column</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:809</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colum</td>
+<td><a href="../_components_results_model_column_.column/">Column</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="geosort"></a></p>
+<h3 id="geosort">geoSort</h3>
+<p>▸ <strong>geoSort</strong>(): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:675</em></p>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="ngdocheck"></a></p>
+<h3 id="ngdocheck">ngDoCheck</h3>
+<p>▸ <strong>ngDoCheck</strong>(): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:527</em></p>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="ngonchanges"></a></p>
+<h3 id="ngonchanges">ngOnChanges</h3>
+<p>▸ <strong>ngOnChanges</strong>(changes: <em><code>SimpleChanges</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:456</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>changes</td>
+<td><code>SimpleChanges</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="ngoninit"></a></p>
+<h3 id="ngoninit">ngOnInit</h3>
+<p>▸ <strong>ngOnInit</strong>(): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:444</em></p>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="onenteritem"></a></p>
+<h3 id="onenteritem">onEnterItem</h3>
+<p>▸ <strong>onEnterItem</strong>(item: <em><a href="../_components_results_model_item_.item/">Item</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:703</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item</td>
+<td><a href="../_components_results_model_item_.item/">Item</a></td>
+<td>hovered item</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="onleaveitem"></a></p>
+<h3 id="onleaveitem">onLeaveItem</h3>
+<p>▸ <strong>onLeaveItem</strong>(item: <em><a href="../_components_results_model_item_.item/">Item</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:712</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item</td>
+<td><a href="../_components_results_model_item_.item/">Item</a></td>
+<td>item previously hovered</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="paginate"></a></p>
+<h3 id="paginate">paginate</h3>
+<p>▸ <strong>paginate</strong>(itemData: <em><code>Map</code>&lt;<code>string</code>, <code>string</code> | <code>number</code> | <code>Date</code>&gt;</em>, whichPage: <em><a href="../../enums/_components_results_utils_enumerations_pageenum_.pageenum/">PageEnum</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:576</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>itemData</td>
+<td><code>Map</code>&lt;<code>string</code>, <code>string</code></td>
+<td><code>number</code></td>
+</tr>
+<tr>
+<td>whichPage</td>
+<td><a href="../../enums/_components_results_utils_enumerations_pageenum_.pageenum/">PageEnum</a></td>
+<td>: Whether to fetch the `next` or `previous` page</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="selectallitems"></a></p>
+<h3 id="selectallitems">selectAllItems</h3>
+<p>▸ <strong>selectAllItems</strong>(): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:762</em></p>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="selectinbetween"></a></p>
+<h3 id="selectinbetween">selectInBetween</h3>
+<p>▸ <strong>selectInBetween</strong>(): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:778</em></p>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setborderstyle"></a></p>
+<h3 id="setborderstyle">setBorderStyle</h3>
+<p>▸ <strong>setBorderStyle</strong>(borderStyle: <em><code>any</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:719</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>borderStyle</td>
+<td><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setconsulteditem"></a></p>
+<h3 id="setconsulteditem">setConsultedItem</h3>
+<p>▸ <strong>setConsultedItem</strong>(identifier: <em><code>string</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:691</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>identifier</td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setdirection"></a></p>
+<h3 id="setdirection">setDirection</h3>
+<p>▸ <strong>setDirection</strong>(direction: <em><code>string</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:652</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>direction</td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setfilters"></a></p>
+<h3 id="setfilters">setFilters</h3>
+<p>▸ <strong>setFilters</strong>(filtersMap: <em><code>Map</code>&lt;<code>string</code>, <code>string</code> | <code>number</code> | <code>Date</code>&gt;</em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:609</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>filtersMap</td>
+<td><code>Map</code>&lt;<code>string</code>, <code>string</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setgeosortaction"></a></p>
+<h3 id="setgeosortaction">setGeoSortAction</h3>
+<p>▸ <strong>setGeoSortAction</strong>(): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:597</em></p>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setglobalaction"></a></p>
+<h3 id="setglobalaction">setGlobalAction</h3>
+<p>▸ <strong>setGlobalAction</strong>(action: <em><a href="../../interfaces/_components_results_utils_results_utils_.action/">Action</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:593</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td><a href="../../interfaces/_components_results_utils_results_utils_.action/">Action</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setitemactions"></a></p>
+<h3 id="setitemactions">setItemActions</h3>
+<p>▸ <strong>setItemActions</strong>(item: <em><a href="../_components_results_model_item_.item/">Item</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:828</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item</td>
+<td><a href="../_components_results_model_item_.item/">Item</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setselectedgriditem"></a></p>
+<h3 id="setselectedgriditem">setSelectedGridItem</h3>
+<p>▸ <strong>setSelectedGridItem</strong>(item: <em><a href="../_components_results_model_item_.item/">Item</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:726</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item</td>
+<td><a href="../_components_results_model_item_.item/">Item</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setselecteditems"></a></p>
+<h3 id="setselecteditems">setSelectedItems</h3>
+<p>▸ <strong>setSelectedItems</strong>(selectedItems: <em><code>Set</code>&lt;<code>string</code>&gt;</em>, stopPropagation?: <em><code>boolean</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:617</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selectedItems</td>
+<td><code>Set</code>&lt;<code>string</code>&gt;</td>
+</tr>
+<tr>
+<td><code>Optional</code> stopPropagation</td>
+<td><code>boolean</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="setsortedcolumn"></a></p>
+<h3 id="setsortedcolumn">setSortedColumn</h3>
+<p>▸ <strong>setSortedColumn</strong>(event: <em><code>MatSelectChange</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:659</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td><code>MatSelectChange</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="shiftdown"></a></p>
+<h3 id="shiftdown">shiftDown</h3>
+<p>▸ <strong>shiftDown</strong>(_: <em><code>any</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:435</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_</td>
+<td><code>any</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="shiftup"></a></p>
+<h3 id="shiftup">shiftUp</h3>
+<p>▸ <strong>shiftUp</strong>(event: <em><code>KeyboardEvent</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:440</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event</td>
+<td><code>KeyboardEvent</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="sort"></a></p>
+<h3 id="sort">sort</h3>
+<p>▸ <strong>sort</strong>(paramSortedColumn: <em><a href="../_components_results_model_column_.column/">Column</a></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:637</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>paramSortedColumn</td>
+<td><a href="../_components_results_model_column_.column/">Column</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="triggeractiononitem"></a></p>
+<h3 id="triggeractiononitem">triggerActionOnItem</h3>
+<p>▸ <strong>triggerActionOnItem</strong>(actionOnItem: <em><code>object</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:586</em></p>
+<p><strong>Parameters:</strong></p>
+<p><strong>actionOnItem: <code>object</code></strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td><a href="../../interfaces/_components_results_utils_results_utils_.action/">Action</a></td>
+</tr>
+<tr>
+<td>elementidentifier</td>
+<td><a href="../../interfaces/_components_results_utils_results_utils_.elementidentifier/">ElementIdentifier</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<p><a id="whichmode"></a></p>
+<h3 id="whichmode">whichMode</h3>
+<p>▸ <strong>whichMode</strong>(toggleChangeEvent: <em><code>MatButtonToggleChange</code></em>): <code>void</code></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:747</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>toggleChangeEvent</td>
+<td><code>MatButtonToggleChange</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>void</code></p>
+<hr />
+<h2 id="object-literals_1">Object literals</h2>
+<p><a id="fetchstate"></a></p>
+<h3 id="fetchstate">fetchState</h3>
+<p><strong>fetchState</strong>: <em><code>object</code></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:117</em></p>
+<p><a id="fetchstate.endlistdown"></a></p>
+<h4 id="endlistdown">endListDown</h4>
+<p><strong>● endListDown</strong>: <em><code>boolean</code></em> = false</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:117</em></p>
+<hr />
+<p><a id="fetchstate.endlistup"></a></p>
+<h4 id="endlistup">endListUp</h4>
+<p><strong>● endListUp</strong>: <em><code>boolean</code></em> = true</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:117</em></p>
+<hr />
+<hr />
+<p><a id="loadanimationconfig"></a></p>
+<h3 id="loadanimationconfig">loadAnimationConfig</h3>
+<p><strong>loadAnimationConfig</strong>: <em><code>object</code></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:104</em></p>
+<p><a id="loadanimationconfig.animationtype"></a></p>
+<h4 id="animationtype">animationType</h4>
+<p><strong>● animationType</strong>: <em><code>string</code></em> =  ANIMATION_TYPES.threeBounce</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:105</em></p>
+<hr />
+<p><a id="loadanimationconfig.backdropbackgroundcolour"></a></p>
+<h4 id="backdropbackgroundcolour">backdropBackgroundColour</h4>
+<p><strong>● backdropBackgroundColour</strong>: <em><code>string</code></em> = "rgba(100,100,100,0.5)"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:105</em></p>
+<hr />
+<p><a id="loadanimationconfig.backdropborderradius"></a></p>
+<h4 id="backdropborderradius">backdropBorderRadius</h4>
+<p><strong>● backdropBorderRadius</strong>: <em><code>string</code></em> = "0"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:106</em></p>
+<hr />
+<p><a id="loadanimationconfig.primarycolour"></a></p>
+<h4 id="primarycolour">primaryColour</h4>
+<p><strong>● primaryColour</strong>: <em><code>string</code></em> = "#ffffff"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:106</em></p>
+<hr />
+<p><a id="loadanimationconfig.secondarycolour"></a></p>
+<h4 id="secondarycolour">secondaryColour</h4>
+<p><strong>● secondaryColour</strong>: <em><code>string</code></em> = "#ffffff"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:106</em></p>
+<hr />
+<p><a id="loadanimationconfig.tertiarycolour"></a></p>
+<h4 id="tertiarycolour">tertiaryColour</h4>
+<p><strong>● tertiaryColour</strong>: <em><code>string</code></em> = "#ffffff"</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:106</em></p>
+<hr />
+<hr />
+<p><a id="scrolloptions"></a></p>
+<h3 id="scrolloptions">scrollOptions</h3>
+<p><strong>scrollOptions</strong>: <em><code>object</code></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:109</em></p>
+<p><a id="scrolloptions.maintainscrolldownposition"></a></p>
+<h4 id="maintainscrolldownposition">maintainScrollDownPosition</h4>
+<p><strong>● maintainScrollDownPosition</strong>: <em><code>boolean</code></em> = true</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:109</em></p>
+<hr />
+<p><a id="scrolloptions.maintainscrollupposition"></a></p>
+<h4 id="maintainscrollupposition">maintainScrollUpPosition</h4>
+<p><strong>● maintainScrollUpPosition</strong>: <em><code>boolean</code></em> = true</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:109</em></p>
+<hr />
+<p><a id="scrolloptions.nblines"></a></p>
+<h4 id="nblines">nbLines</h4>
+<p><strong>● nbLines</strong>: <em><code>number</code></em> = 0</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:109</em></p>
+<hr />
+<hr />
+<p><a id="sortedcolumn"></a></p>
+<h3 id="sortedcolumn">sortedColumn</h3>
+<p><strong>sortedColumn</strong>: <em><code>object</code></em></p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:386</em></p>
+<p><a id="sortedcolumn.fieldname"></a></p>
+<h4 id="fieldname">fieldName</h4>
+<p><strong>● fieldName</strong>: <em><code>string</code></em> = ""</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:386</em></p>
+<hr />
+<p><a id="sortedcolumn.sortdirection"></a></p>
+<h4 id="sortdirection">sortDirection</h4>
+<p><strong>● sortDirection</strong>: <em><a href="../../enums/_components_results_utils_enumerations_sortenum_.sortenum/#asc">asc</a></em> =  SortEnum.asc</p>
+<p><em>Defined in components/results/result-list/result-list.component.ts:386</em></p>
+<hr />
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../_components_powerbars_powerbars_component_.powerbarscomponent/" title="Powerbars" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Powerbars
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../_components_wmts_layer_manager_wmts_layer_manager_component_.wmtslayermanagercomponent/" title="WMTS Manager" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                WMTS Manager
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

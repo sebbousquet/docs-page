@@ -1,0 +1,8 @@
+{
+  "index_name": "airport_index",
+  "id_path": "id",
+  "geometry_path": "geometry",
+  "centroid_path": "centroid",
+  "timestamp_path": "startdate",
+  "include_fields": "*"
+}
